@@ -1,0 +1,15 @@
+{
+  "name": "diu-campus-assistant-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "import:pdf": "node import-pdf.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongodb": "^7.0.0",
+    "pdfjs-dist": "^6.5.438"
+  }
+}

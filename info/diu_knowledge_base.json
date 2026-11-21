@@ -1,0 +1,866 @@
+{
+  "metadata": {
+    "institution": "Daffodil International University",
+    "extracted_on": "2026-11-21",
+    "scope": "Partial verified public-site extraction, not complete website scrape",
+    "currency": "BDT",
+    "verification": "Official search-index listings and accessible official pages; live dynamic content incomplete",
+    "missing_values": "null means not verified, not zero"
+  },
+  "university": {
+    "name": "Daffodil International University",
+    "established_year": 2002,
+    "campus_address": "Daffodil Smart City, Birulia, Savar, Dhaka-1216, Bangladesh",
+    "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+  },
+  "departments": [
+    {
+      "faculty": "Business & Entrepreneurship",
+      "department": "Business Administration",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Business & Entrepreneurship",
+      "department": "Management",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Business & Entrepreneurship",
+      "department": "Real Estate",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Business & Entrepreneurship",
+      "department": "Tourism & Hospitality Management",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Business & Entrepreneurship",
+      "department": "Innovation & Entrepreneurship",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Business & Entrepreneurship",
+      "department": "Accounting",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Business & Entrepreneurship",
+      "department": "Finance & Banking",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Business & Entrepreneurship",
+      "department": "Marketing",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Science and Information Technology",
+      "department": "Computer Science and Engineering",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Science and Information Technology",
+      "department": "Software Engineering",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Science and Information Technology",
+      "department": "Multimedia & Creative Technology",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Science and Information Technology",
+      "department": "Computing and Information System",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Science and Information Technology",
+      "department": "Information Technology & Management",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Science and Information Technology",
+      "department": "Robotics and Mechatronics Engineering",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Agriculture Sciences",
+      "department": "Agricultural Science",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Agriculture Sciences",
+      "department": "Fisheries",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Engineering",
+      "department": "Information and Communication Engineering",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Engineering",
+      "department": "Textile Engineering",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Engineering",
+      "department": "Electrical and Electronic Engineering",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Engineering",
+      "department": "Architecture",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Engineering",
+      "department": "Civil Engineering",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Health and Life Sciences",
+      "department": "Environmental Science and Disaster Management",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Health and Life Sciences",
+      "department": "Pharmacy",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Health and Life Sciences",
+      "department": "Nutrition and Food Engineering",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Health and Life Sciences",
+      "department": "Public Health",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Health and Life Sciences",
+      "department": "Physical Education & Sports Science",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Health and Life Sciences",
+      "department": "Genetic Engineering and Biotechnology",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Humanities & Social Sciences",
+      "department": "English",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Humanities & Social Sciences",
+      "department": "Law",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Humanities & Social Sciences",
+      "department": "Journalism, Media and Communication",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "faculty": "Humanities & Social Sciences",
+      "department": "Development Studies",
+      "status": "verified_directory_listing",
+      "source_url": "https://faculty.daffodilvarsity.edu.bd/"
+    }
+  ],
+  "undergraduate_programs_partial": [
+    {
+      "program": "B.Sc. in Computer Science and Engineering",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "B.Sc. in Software Engineering",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "B.Sc. in Software Engineering (Cyber Security)",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "B.Sc. in Software Engineering (Data Science)",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "B.Sc. in Software Engineering (Robotics)",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "B.Sc. in Multimedia & Creative Technology",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "B.Sc. in Computing and Information System",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "B.Sc. in Information Technology & Management",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "B.Sc. in Robotics and Mechatronics Engineering",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "B.Sc. in Artificial Intelligence and Data Engineering",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "Bachelor of Business Administration",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "BBA in Management",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "Bachelor of Real Estate",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "Bachelor of Tourism & Hospitality Management",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "Bachelor of Entrepreneurship",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "BBA in Accounting",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "BBA in Finance & Banking",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "BBA in Marketing",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "BA (Hons) in English",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "LLB (Hons)",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "BSS in Journalism, Media and Communication",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "B.Sc. in Information & Communication Engineering",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "B.Sc. in Textile Engineering",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "B.Sc. in Electrical and Electronic Engineering",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "Bachelor of Architecture",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "B.Sc. in Civil Engineering",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "B.Sc. in Environmental Science and Disaster Management",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "Bachelor of Pharmacy",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "Bachelor of Nutrition and Food Engineering",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "Bachelor of Public Health",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "B.Sc. in Physical Education and Sports Science",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "B.Sc. in Genetic Engineering and Biotechnology",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "Bachelor of Agricultural Science",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "program": "B.Sc. (Hons) in Fisheries",
+      "level": "undergraduate",
+      "status": "listed_at_a_glance_program_level_not_reconciled",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    }
+  ],
+  "tuition_fees_partial": [
+    {
+      "program": "Bachelor of Business Administration (BBA)",
+      "average_semester_fee_bdt": 70000,
+      "total_program_fee_bdt": 851550,
+      "admission_fee_bdt": null,
+      "total_tuition_fee_bdt": null,
+      "credit_hours": null,
+      "status": "search_index_verified_recheck_live",
+      "source_url": "https://daffodilvarsity.edu.bd/tuition-fees"
+    },
+    {
+      "program": "BBA in Marketing",
+      "average_semester_fee_bdt": 68000,
+      "total_program_fee_bdt": 813100,
+      "admission_fee_bdt": null,
+      "total_tuition_fee_bdt": null,
+      "credit_hours": null,
+      "status": "search_index_verified_recheck_live",
+      "source_url": "https://daffodilvarsity.edu.bd/tuition-fees"
+    },
+    {
+      "program": "Bachelor of Entrepreneurship",
+      "average_semester_fee_bdt": 65000,
+      "total_program_fee_bdt": 781500,
+      "admission_fee_bdt": null,
+      "total_tuition_fee_bdt": null,
+      "credit_hours": null,
+      "status": "search_index_verified_recheck_live",
+      "source_url": "https://daffodilvarsity.edu.bd/tuition-fees"
+    },
+    {
+      "program": "Tourism & Hospitality Management",
+      "average_semester_fee_bdt": 66000,
+      "total_program_fee_bdt": 798600,
+      "admission_fee_bdt": null,
+      "total_tuition_fee_bdt": null,
+      "credit_hours": null,
+      "status": "search_index_verified_recheck_live",
+      "source_url": "https://daffodilvarsity.edu.bd/tuition-fees"
+    }
+  ],
+  "waiver_schemes": [
+    {
+      "group": "Academic result based",
+      "scheme": "Result-based waiver (SSC/HSC/undergraduate)",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Academic result based",
+      "scheme": "Waiver on SGPA",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Academic result based",
+      "scheme": "Diploma holders in undergraduate programs",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Academic result based",
+      "scheme": "Masters programs",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Academic result based",
+      "scheme": "International students in masters",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Academic result based",
+      "scheme": "Dual masters quota",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Daffodil group alumni",
+      "scheme": "Daffodil International College quota",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Daffodil group alumni",
+      "scheme": "Daffodil Polytechnic Institute / BSDI quota",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Daffodil group alumni",
+      "scheme": "Daffodil Technical Institute quota",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Special schemes",
+      "scheme": "Need-based waiver",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Special schemes",
+      "scheme": "Player quota",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Special schemes",
+      "scheme": "Be a Media Star winner",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Special schemes",
+      "scheme": "Anti-discrimination movement 2024 support",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Special schemes",
+      "scheme": "COVID-19 support",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Special schemes",
+      "scheme": "Corporate social responsibility waiver",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Institutional eligibility",
+      "scheme": "Female quota",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Institutional eligibility",
+      "scheme": "DIU employee / first blood relatives",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Institutional eligibility",
+      "scheme": "First blood relatives of alumni",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Institutional eligibility",
+      "scheme": "Spouse of DIU alumni",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Institutional eligibility",
+      "scheme": "Physically challenged / specially able",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Institutional eligibility",
+      "scheme": "Tribal / ethnic group",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Institutional eligibility",
+      "scheme": "Sibling / spouse",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Institutional eligibility",
+      "scheme": "Son or daughter of current students",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Institutional eligibility",
+      "scheme": "Group admission (3-5 students)",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Institutional eligibility",
+      "scheme": "First batch of a program",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Government approved",
+      "scheme": "100% waiver for poor and meritorious students",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Government approved",
+      "scheme": "Freedom fighter quota",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "group": "Government approved",
+      "scheme": "Injured students in July-August 2024 movement",
+      "percentage": null,
+      "eligibility_details": null,
+      "status": "scheme_verified_details_unverified",
+      "source_url": "https://daffodilvarsity.edu.bd/scholarship"
+    }
+  ],
+  "services": [
+    {
+      "service": "Transport",
+      "details": "Daily 50+ buses covering Dhaka and nearby districts",
+      "source_url": "https://www.daffodilvarsity.edu.bd/campus-life",
+      "status": "verified_official_listing"
+    },
+    {
+      "service": "Hostel",
+      "details": "Student residences advertised near classrooms",
+      "source_url": "https://www.daffodilvarsity.edu.bd/campus-life",
+      "status": "verified_official_listing"
+    },
+    {
+      "service": "Library",
+      "details": "Sat-Thu 08:00-20:00; Friday 08:00-16:00",
+      "source_url": "https://www.library.daffodilvarsity.edu.bd/",
+      "status": "verified_official_listing"
+    },
+    {
+      "service": "Career Development Center",
+      "details": "Listed student support service",
+      "source_url": "https://www.daffodilvarsity.edu.bd/campus-life",
+      "status": "verified_official_listing"
+    },
+    {
+      "service": "Office of Student Affairs",
+      "details": "Listed student support service",
+      "source_url": "https://www.daffodilvarsity.edu.bd/campus-life",
+      "status": "verified_official_listing"
+    },
+    {
+      "service": "HRDI",
+      "details": "Listed student support service",
+      "source_url": "https://www.daffodilvarsity.edu.bd/campus-life",
+      "status": "verified_official_listing"
+    },
+    {
+      "service": "Blended Learning Center",
+      "details": "Listed student support service",
+      "source_url": "https://www.daffodilvarsity.edu.bd/campus-life",
+      "status": "verified_official_listing"
+    },
+    {
+      "service": "Campus Wi-Fi",
+      "details": "Listed as available",
+      "source_url": "https://financialaid.daffodilvarsity.edu.bd/?app=home&cmd=Eligibility",
+      "status": "verified_official_listing"
+    },
+    {
+      "service": "Gymnasium",
+      "details": "Listed as available",
+      "source_url": "https://financialaid.daffodilvarsity.edu.bd/?app=home&cmd=Eligibility",
+      "status": "verified_official_listing"
+    },
+    {
+      "service": "Student Life Insurance",
+      "details": "Listed as available",
+      "source_url": "https://financialaid.daffodilvarsity.edu.bd/?app=home&cmd=Eligibility",
+      "status": "verified_official_listing"
+    },
+    {
+      "service": "Guardian Life Insurance",
+      "details": "Listed as available",
+      "source_url": "https://financialaid.daffodilvarsity.edu.bd/?app=home&cmd=Eligibility",
+      "status": "verified_official_listing"
+    },
+    {
+      "service": "Internship portal",
+      "details": "Linked from official website",
+      "source_url": "https://internship.daffodilvarsity.edu.bd/",
+      "status": "verified_official_listing"
+    }
+  ],
+  "contacts_partial": [
+    {
+      "office": "Admission Office",
+      "email": "admission@daffodilvarsity.edu.bd",
+      "source_url": "https://daffodilvarsity.edu.bd/tuition-fees",
+      "status": "verified_footer"
+    },
+    {
+      "office": "Scholarship / Waiver",
+      "email": "scholarship1@daffodilvarsity.edu.bd",
+      "source_url": "https://daffodilvarsity.edu.bd/waiver/faq",
+      "status": "verified_faq"
+    },
+    {
+      "office": "Library",
+      "email": "librarian@daffodilvarsity.edu.bd",
+      "source_url": "https://www.library.daffodilvarsity.edu.bd/",
+      "status": "verified_official_listing"
+    },
+    {
+      "office": "Transport",
+      "email": "transportoffice@daffodilvarsity.edu.bd",
+      "source_url": "https://www.daffodilvarsity.edu.bd/support-contact",
+      "status": "verified_official_listing"
+    }
+  ],
+  "notes": [
+    {
+      "topic": "Program catalog",
+      "detail": "Official program catalog advertises 51 undergraduate and graduate programs; only 34 undergraduate names transcribed from indexed at-a-glance page; graduate names and completeness unverified.",
+      "source_url": "https://daffodilvarsity.edu.bd/programs",
+      "status": "partial"
+    },
+    {
+      "topic": "Admissions",
+      "detail": "Admission portal available; requirements, application costs and deadlines not fully extracted. Indexed tuition page shows Spring 2027 apply by Dec 22, 2026 and admission test Dec 26, 2026; confirm current notice.",
+      "source_url": "https://daffodilvarsity.edu.bd/tuition-fees",
+      "status": "partial"
+    },
+    {
+      "topic": "Waiver conditions",
+      "detail": "Financial aid portal says undergraduate students generally need 12 credits/semester, postgraduate 9 credits; 3.00 in English I and II to retain waiver. Waiver applies to tuition only, excluding listed other fees.",
+      "source_url": "https://financialaid.daffodilvarsity.edu.bd/?app=home&cmd=Eligibility",
+      "status": "verified_official_listing"
+    },
+    {
+      "topic": "Waiver overlap",
+      "detail": "FAQ says a student may enjoy one waiver category, highest applicable percentage. Check current policy for exceptions.",
+      "source_url": "https://daffodilvarsity.edu.bd/waiver/faq",
+      "status": "verified_faq"
+    },
+    {
+      "topic": "University",
+      "detail": "Established 2002; campus address Daffodil Smart City, Birulia, Savar, Dhaka-1216, Bangladesh.",
+      "source_url": "https://www.daffodilvarsity.edu.bd/at-a-glance",
+      "status": "verified_official_listing"
+    },
+    {
+      "topic": "Coverage limitations",
+      "detail": "Dynamic tuition and programs pages could not be comprehensively extracted; no full-site crawl or subdomain audit performed. Missing values are null, not zero.",
+      "source_url": "https://daffodilvarsity.edu.bd/tuition-fees",
+      "status": "incomplete"
+    }
+  ],
+  "sources": [
+    {
+      "topic": "faculty",
+      "url": "https://faculty.daffodilvarsity.edu.bd/"
+    },
+    {
+      "topic": "programs",
+      "url": "https://daffodilvarsity.edu.bd/programs"
+    },
+    {
+      "topic": "fees",
+      "url": "https://daffodilvarsity.edu.bd/tuition-fees"
+    },
+    {
+      "topic": "scholarship",
+      "url": "https://daffodilvarsity.edu.bd/scholarship"
+    },
+    {
+      "topic": "policy",
+      "url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf"
+    },
+    {
+      "topic": "aid",
+      "url": "https://financialaid.daffodilvarsity.edu.bd/?app=home&cmd=Eligibility"
+    },
+    {
+      "topic": "faq",
+      "url": "https://daffodilvarsity.edu.bd/waiver/faq"
+    },
+    {
+      "topic": "glance",
+      "url": "https://www.daffodilvarsity.edu.bd/at-a-glance"
+    },
+    {
+      "topic": "campus",
+      "url": "https://www.daffodilvarsity.edu.bd/campus-life"
+    },
+    {
+      "topic": "library",
+      "url": "https://www.library.daffodilvarsity.edu.bd/"
+    },
+    {
+      "topic": "support",
+      "url": "https://www.daffodilvarsity.edu.bd/support-contact"
+    },
+    {
+      "topic": "admission",
+      "url": "https://admission.daffodilvarsity.edu.bd/"
+    }
+  ]
+}
