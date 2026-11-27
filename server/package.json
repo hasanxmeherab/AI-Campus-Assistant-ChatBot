@@ -8,7 +8,8 @@
     "import:pdf": "node import-pdf.js",
     "import:diu_knowledge_base.json": "node import-knowledge-base.js",
     "import:tuition": "node import-tuition.js",
-    "import:admissions": "node import-admissions.js"
+    "import:admissions": "node import-admissions.js",
+    "import:waivers": "node import-waivers.js"
   },
   "dependencies": {
     "express": "^5.1.0",

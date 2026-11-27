@@ -1,0 +1,3524 @@
+{
+  "university": "Daffodil International University",
+  "date_checked": "2026-11-28",
+  "record_count": 100,
+  "general_rules": {
+    "ordinary_waivers_apply_to": "Tuition only",
+    "excluded_fees": [
+      "Admission",
+      "Semester",
+      "Library",
+      "Lab",
+      "Extracurricular",
+      "Improvement",
+      "Retake",
+      "Project",
+      "Dissertation",
+      "Internship"
+    ],
+    "stacking": "Normally highest single waiver only; named funds may have separate eligibility",
+    "english_I_II_minimum_grade": 3.0,
+    "credit_rules_note": "Detailed policy uses trimester/bi-semester thresholds; financial aid portal gives generic 12 undergraduate/9 postgraduate and possible relaxation. Confirm exceptions. Specific rules take precedence provisionally.",
+    "source_urls": [
+      "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+      "https://daffodilvarsity.edu.bd/waiver/faq",
+      "https://financialaid.daffodilvarsity.edu.bd/",
+      "https://daffodilvarsity.edu.bd/scholarship"
+    ],
+    "conflicts": [
+      "FAQ publishes older merit rates; prefer dated Spring 2026 tables.",
+      "Spring 2027 applicability not confirmed.",
+      "Agriculture faculty not explicitly mapped in merit tables.",
+      "General credit thresholds used for entry merit records; not repeated in specific merit tables."
+    ],
+    "null_meaning": "Not specified or not verified; never infer zero or eligibility.",
+    "chatbot_instruction": "Use only verified applicable rules; ask intake and program; do not present historic or incomplete records as current offers. Refer conflicts to DIU waiver office."
+  },
+  "waivers": [
+    {
+      "id": "merit_general_1",
+      "name": "Entry merit",
+      "who_qualifies": {
+        "applicant_category": "SSC/HSC applicants",
+        "eligible_programs": "SIT, BE, AHS, Engineering except CSE, SWE, B.Pharm",
+        "required_grades": "Golden GPA 5 in SSC and HSC"
+      },
+      "what_it_covers": {
+        "percentage": 50,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3.25,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "merit_general_2",
+      "name": "Entry merit",
+      "who_qualifies": {
+        "applicant_category": "SSC/HSC applicants",
+        "eligible_programs": "SIT, BE, AHS, Engineering except CSE, SWE, B.Pharm",
+        "required_grades": "Golden GPA 5 in HSC"
+      },
+      "what_it_covers": {
+        "percentage": 30,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "merit_general_3",
+      "name": "Entry merit",
+      "who_qualifies": {
+        "applicant_category": "SSC/HSC applicants",
+        "eligible_programs": "SIT, BE, AHS, Engineering except CSE, SWE, B.Pharm",
+        "required_grades": "GPA 5 in SSC and HSC"
+      },
+      "what_it_covers": {
+        "percentage": 25,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "merit_general_4",
+      "name": "Entry merit",
+      "who_qualifies": {
+        "applicant_category": "SSC/HSC applicants",
+        "eligible_programs": "SIT, BE, AHS, Engineering except CSE, SWE, B.Pharm",
+        "required_grades": "GPA 5 in HSC"
+      },
+      "what_it_covers": {
+        "percentage": 20,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "merit_general_5",
+      "name": "Entry merit",
+      "who_qualifies": {
+        "applicant_category": "SSC/HSC applicants",
+        "eligible_programs": "SIT, BE, AHS, Engineering except CSE, SWE, B.Pharm",
+        "required_grades": "HSC GPA 4.90–4.99"
+      },
+      "what_it_covers": {
+        "percentage": 15,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "merit_general_6",
+      "name": "Entry merit",
+      "who_qualifies": {
+        "applicant_category": "SSC/HSC applicants",
+        "eligible_programs": "SIT, BE, AHS, Engineering except CSE, SWE, B.Pharm",
+        "required_grades": "HSC GPA 4.75–4.89"
+      },
+      "what_it_covers": {
+        "percentage": 10,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "merit_hss_1",
+      "name": "Entry merit",
+      "who_qualifies": {
+        "applicant_category": "SSC/HSC applicants",
+        "eligible_programs": "Humanities and Social Sciences except LLB",
+        "required_grades": "Golden GPA 5 in SSC and HSC"
+      },
+      "what_it_covers": {
+        "percentage": 50,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3.25,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "merit_hss_2",
+      "name": "Entry merit",
+      "who_qualifies": {
+        "applicant_category": "SSC/HSC applicants",
+        "eligible_programs": "Humanities and Social Sciences except LLB",
+        "required_grades": "Golden GPA 5 in HSC"
+      },
+      "what_it_covers": {
+        "percentage": 30,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "merit_hss_3",
+      "name": "Entry merit",
+      "who_qualifies": {
+        "applicant_category": "SSC/HSC applicants",
+        "eligible_programs": "Humanities and Social Sciences except LLB",
+        "required_grades": "GPA 5 in SSC and HSC"
+      },
+      "what_it_covers": {
+        "percentage": 25,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "merit_hss_4",
+      "name": "Entry merit",
+      "who_qualifies": {
+        "applicant_category": "SSC/HSC applicants",
+        "eligible_programs": "Humanities and Social Sciences except LLB",
+        "required_grades": "GPA 5 in HSC"
+      },
+      "what_it_covers": {
+        "percentage": 20,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "merit_hss_5",
+      "name": "Entry merit",
+      "who_qualifies": {
+        "applicant_category": "SSC/HSC applicants",
+        "eligible_programs": "Humanities and Social Sciences except LLB",
+        "required_grades": "HSC GPA 4.90–4.99"
+      },
+      "what_it_covers": {
+        "percentage": 15,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "merit_hss_6",
+      "name": "Entry merit",
+      "who_qualifies": {
+        "applicant_category": "SSC/HSC applicants",
+        "eligible_programs": "Humanities and Social Sciences except LLB",
+        "required_grades": "HSC GPA 4.50–4.89"
+      },
+      "what_it_covers": {
+        "percentage": 10,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "merit_cse_swe_1",
+      "name": "Entry merit",
+      "who_qualifies": {
+        "applicant_category": "SSC/HSC applicants",
+        "eligible_programs": [
+          "CSE",
+          "SWE"
+        ],
+        "required_grades": "Golden GPA 5 in SSC and HSC"
+      },
+      "what_it_covers": {
+        "percentage": 40,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3.25,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "merit_cse_swe_2",
+      "name": "Entry merit",
+      "who_qualifies": {
+        "applicant_category": "SSC/HSC applicants",
+        "eligible_programs": [
+          "CSE",
+          "SWE"
+        ],
+        "required_grades": "Golden GPA 5 in HSC"
+      },
+      "what_it_covers": {
+        "percentage": 20,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "merit_cse_swe_3",
+      "name": "Entry merit",
+      "who_qualifies": {
+        "applicant_category": "SSC/HSC applicants",
+        "eligible_programs": [
+          "CSE",
+          "SWE"
+        ],
+        "required_grades": "GPA 5 in SSC and HSC"
+      },
+      "what_it_covers": {
+        "percentage": 15,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "merit_cse_swe_4",
+      "name": "Entry merit",
+      "who_qualifies": {
+        "applicant_category": "SSC/HSC applicants",
+        "eligible_programs": [
+          "CSE",
+          "SWE"
+        ],
+        "required_grades": "GPA 5 in HSC"
+      },
+      "what_it_covers": {
+        "percentage": 10,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "merit_pharm_law_1",
+      "name": "Entry merit",
+      "who_qualifies": {
+        "applicant_category": "SSC/HSC applicants",
+        "eligible_programs": [
+          "B.Pharm",
+          "LLB"
+        ],
+        "required_grades": "Golden GPA 5 in SSC and HSC"
+      },
+      "what_it_covers": {
+        "percentage": 20,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "merit_pharm_law_2",
+      "name": "Entry merit",
+      "who_qualifies": {
+        "applicant_category": "SSC/HSC applicants",
+        "eligible_programs": [
+          "B.Pharm",
+          "LLB"
+        ],
+        "required_grades": "Golden GPA 5 in HSC"
+      },
+      "what_it_covers": {
+        "percentage": 15,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "merit_pharm_law_3",
+      "name": "Entry merit",
+      "who_qualifies": {
+        "applicant_category": "SSC/HSC applicants",
+        "eligible_programs": [
+          "B.Pharm",
+          "LLB"
+        ],
+        "required_grades": "GPA 5 in HSC"
+      },
+      "what_it_covers": {
+        "percentage": 10,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "em_general_1",
+      "name": "English medium merit",
+      "who_qualifies": {
+        "applicant_category": "O/A level applicants",
+        "eligible_programs": "Undergraduate except CSE, SWE, B.Pharm, LLB",
+        "required_grades": "5 A grades at O level and 2 A grades at A level"
+      },
+      "what_it_covers": {
+        "percentage": 75,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3.5,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "em_general_2",
+      "name": "English medium merit",
+      "who_qualifies": {
+        "applicant_category": "O/A level applicants",
+        "eligible_programs": "Undergraduate except CSE, SWE, B.Pharm, LLB",
+        "required_grades": "A and B at A level"
+      },
+      "what_it_covers": {
+        "percentage": 50,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3.25,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "em_general_3",
+      "name": "English medium merit",
+      "who_qualifies": {
+        "applicant_category": "O/A level applicants",
+        "eligible_programs": "Undergraduate except CSE, SWE, B.Pharm, LLB",
+        "required_grades": "2 B grades at A level"
+      },
+      "what_it_covers": {
+        "percentage": 40,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3.25,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "em_general_4",
+      "name": "English medium merit",
+      "who_qualifies": {
+        "applicant_category": "O/A level applicants",
+        "eligible_programs": "Undergraduate except CSE, SWE, B.Pharm, LLB",
+        "required_grades": "A and C at A level"
+      },
+      "what_it_covers": {
+        "percentage": 30,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "em_general_5",
+      "name": "English medium merit",
+      "who_qualifies": {
+        "applicant_category": "O/A level applicants",
+        "eligible_programs": "Undergraduate except CSE, SWE, B.Pharm, LLB",
+        "required_grades": "B and C at A level"
+      },
+      "what_it_covers": {
+        "percentage": 20,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "em_special_1",
+      "name": "English medium merit",
+      "who_qualifies": {
+        "applicant_category": "O/A level applicants",
+        "eligible_programs": [
+          "CSE",
+          "SWE",
+          "B.Pharm",
+          "LLB"
+        ],
+        "required_grades": "5 A grades at O level and 2 A grades at A level"
+      },
+      "what_it_covers": {
+        "percentage": 50,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3.25,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "em_special_2",
+      "name": "English medium merit",
+      "who_qualifies": {
+        "applicant_category": "O/A level applicants",
+        "eligible_programs": [
+          "CSE",
+          "SWE",
+          "B.Pharm",
+          "LLB"
+        ],
+        "required_grades": "A and B at A level"
+      },
+      "what_it_covers": {
+        "percentage": 30,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "em_special_3",
+      "name": "English medium merit",
+      "who_qualifies": {
+        "applicant_category": "O/A level applicants",
+        "eligible_programs": [
+          "CSE",
+          "SWE",
+          "B.Pharm",
+          "LLB"
+        ],
+        "required_grades": "2 B grades at A level"
+      },
+      "what_it_covers": {
+        "percentage": 25,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "em_special_4",
+      "name": "English medium merit",
+      "who_qualifies": {
+        "applicant_category": "O/A level applicants",
+        "eligible_programs": [
+          "CSE",
+          "SWE",
+          "B.Pharm",
+          "LLB"
+        ],
+        "required_grades": "A and C at A level"
+      },
+      "what_it_covers": {
+        "percentage": 20,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Academic transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2026 onward (later intake not independently confirmed)",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "sgpa_general_1",
+      "name": "Semester merit",
+      "who_qualifies": {
+        "applicant_category": "Current students",
+        "eligible_programs": "BE, SIT, AHS, Engineering",
+        "required_grades": "4.00"
+      },
+      "what_it_covers": {
+        "percentage": 50,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Automatic review of preceding semester results",
+        "required_documents": [],
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "sgpa_general_2",
+      "name": "Semester merit",
+      "who_qualifies": {
+        "applicant_category": "Current students",
+        "eligible_programs": "BE, SIT, AHS, Engineering",
+        "required_grades": "3.90–3.99"
+      },
+      "what_it_covers": {
+        "percentage": 30,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Automatic review of preceding semester results",
+        "required_documents": [],
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "sgpa_general_3",
+      "name": "Semester merit",
+      "who_qualifies": {
+        "applicant_category": "Current students",
+        "eligible_programs": "BE, SIT, AHS, Engineering",
+        "required_grades": "3.85–3.89"
+      },
+      "what_it_covers": {
+        "percentage": 20,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Automatic review of preceding semester results",
+        "required_documents": [],
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "sgpa_general_4",
+      "name": "Semester merit",
+      "who_qualifies": {
+        "applicant_category": "Current students",
+        "eligible_programs": "BE, SIT, AHS, Engineering",
+        "required_grades": "3.80–3.84"
+      },
+      "what_it_covers": {
+        "percentage": 10,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Automatic review of preceding semester results",
+        "required_documents": [],
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "sgpa_hss_1",
+      "name": "Semester merit",
+      "who_qualifies": {
+        "applicant_category": "Current students",
+        "eligible_programs": "Humanities and Social Sciences",
+        "required_grades": "3.90–4.00"
+      },
+      "what_it_covers": {
+        "percentage": 50,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Automatic review of preceding semester results",
+        "required_documents": [],
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "sgpa_hss_2",
+      "name": "Semester merit",
+      "who_qualifies": {
+        "applicant_category": "Current students",
+        "eligible_programs": "Humanities and Social Sciences",
+        "required_grades": "3.85–3.89"
+      },
+      "what_it_covers": {
+        "percentage": 40,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Automatic review of preceding semester results",
+        "required_documents": [],
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "sgpa_hss_3",
+      "name": "Semester merit",
+      "who_qualifies": {
+        "applicant_category": "Current students",
+        "eligible_programs": "Humanities and Social Sciences",
+        "required_grades": "3.80–3.84"
+      },
+      "what_it_covers": {
+        "percentage": 20,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Automatic review of preceding semester results",
+        "required_documents": [],
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "sgpa_hss_4",
+      "name": "Semester merit",
+      "who_qualifies": {
+        "applicant_category": "Current students",
+        "eligible_programs": "Humanities and Social Sciences",
+        "required_grades": "3.75–3.79"
+      },
+      "what_it_covers": {
+        "percentage": 15,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Automatic review of preceding semester results",
+        "required_documents": [],
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "sgpa_hss_5",
+      "name": "Semester merit",
+      "who_qualifies": {
+        "applicant_category": "Current students",
+        "eligible_programs": "Humanities and Social Sciences",
+        "required_grades": "3.60–3.74"
+      },
+      "what_it_covers": {
+        "percentage": 10,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Automatic review of preceding semester results",
+        "required_documents": [],
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "female_general",
+      "name": "Female quota",
+      "who_qualifies": {
+        "applicant_category": "Female applicants",
+        "eligible_programs": "SIT, BE, HLS, Engineering",
+        "required_grades": "HSC 4.00–4.74"
+      },
+      "what_it_covers": {
+        "percentage": 10,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Relevant transcript"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "female_hss",
+      "name": "Female quota",
+      "who_qualifies": {
+        "applicant_category": "Female applicants",
+        "eligible_programs": "Humanities and Social Sciences",
+        "required_grades": "HSC 4.00–4.49"
+      },
+      "what_it_covers": {
+        "percentage": 10,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Relevant transcript"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "female_pg",
+      "name": "Female quota",
+      "who_qualifies": {
+        "applicant_category": "Female applicants",
+        "eligible_programs": "Masters",
+        "required_grades": "Second class from National/Public University"
+      },
+      "what_it_covers": {
+        "percentage": 10,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Relevant transcript"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 9,
+          "bi_semester": 12
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "employee",
+      "name": "Employee quota",
+      "who_qualifies": {
+        "applicant_category": "Regular full-time DIU employee or child, sibling, spouse",
+        "eligible_programs": "Undergraduate or masters",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": 50,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Employee ID",
+          "Relationship proof",
+          "Employee commitment on stamp paper where applicable"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "undergraduate": {
+            "trimester": 12,
+            "bi_semester": 18
+          },
+          "masters": {
+            "trimester": 9,
+            "bi_semester": 12
+          }
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": "Employee must have completed one year; employee credit restriction waived; two years service after degree or repay half the benefit; resignation ends benefit."
+    },
+    {
+      "id": "alumni_relative",
+      "name": "Alumni relative",
+      "who_qualifies": {
+        "applicant_category": "First blood relative of DIU alumni",
+        "eligible_programs": "Undergraduate or masters",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": 10,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "SSC certificates of both",
+          "Alumni final transcript"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "undergraduate": {
+            "trimester": 12,
+            "bi_semester": 18
+          },
+          "masters": {
+            "trimester": 9,
+            "bi_semester": 12
+          }
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "alumni_spouse",
+      "name": "Alumni spouse",
+      "who_qualifies": {
+        "applicant_category": "Spouse of DIU alumni",
+        "eligible_programs": "Undergraduate or masters",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": 10,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Alumni proof",
+          "Marriage certificate"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "undergraduate": {
+            "trimester": 12,
+            "bi_semester": 18
+          },
+          "masters": {
+            "trimester": 9,
+            "bi_semester": 12
+          }
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "sibling_spouse",
+      "name": "Concurrent sibling/spouse",
+      "who_qualifies": {
+        "applicant_category": "Both enrolled in DIU day programs",
+        "eligible_programs": "Undergraduate or masters",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": 20,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Both SSC certificates or marriage registry certificate"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "undergraduate": {
+            "trimester": 12,
+            "bi_semester": 18
+          },
+          "masters": {
+            "trimester": 9,
+            "bi_semester": 12
+          }
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": "Ends when either graduates or drops out."
+    },
+    {
+      "id": "current_student_child",
+      "name": "Current student child",
+      "who_qualifies": {
+        "applicant_category": "Child of currently enrolled DIU student",
+        "eligible_programs": "Undergraduate",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": 20,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "SSC certificates of both"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": "Both must register in same semester."
+    },
+    {
+      "id": "ethnic",
+      "name": "Ethnic community quota",
+      "who_qualifies": {
+        "applicant_category": "Eligible tribal/ethnic community student",
+        "eligible_programs": "Undergraduate or masters",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": 15,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Community certificate from Raja/King"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "undergraduate": {
+            "trimester": 12,
+            "bi_semester": 18
+          },
+          "masters": {
+            "trimester": 9,
+            "bi_semester": 12
+          }
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "disability",
+      "name": "Disability quota",
+      "who_qualifies": {
+        "applicant_category": "Students with disabilities",
+        "eligible_programs": "Undergraduate or masters",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": 25,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Government disability certificate"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 2.5,
+        "minimum_credits": {
+          "undergraduate": {
+            "trimester": 9,
+            "bi_semester": 12
+          },
+          "masters": {
+            "trimester": 6,
+            "bi_semester": 9
+          }
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "dic",
+      "name": "Affiliated institution waiver",
+      "who_qualifies": {
+        "applicant_category": "DIC/Eminence/Human Development College graduates",
+        "eligible_programs": "Undergraduate",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": 20,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "HSC testimonial or transcript"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "dic_improved",
+      "name": "Affiliated institution waiver",
+      "who_qualifies": {
+        "applicant_category": "DIC graduates",
+        "eligible_programs": "Undergraduate",
+        "required_grades": "HSC result better than SSC"
+      },
+      "what_it_covers": {
+        "percentage": 30,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "HSC testimonial or transcript"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "dpi_bsdi",
+      "name": "Affiliated institution waiver",
+      "who_qualifies": {
+        "applicant_category": "DPI/BSDI four-year diploma graduates",
+        "eligible_programs": "Undergraduate",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": 20,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Diploma testimonial or transcript"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "dti",
+      "name": "Affiliated institution waiver",
+      "who_qualifies": {
+        "applicant_category": "DTI/BSDI four-year diploma graduates",
+        "eligible_programs": "Undergraduate",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": 20,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Diploma testimonial or transcript"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "dipti_lower",
+      "name": "Affiliated institution waiver",
+      "who_qualifies": {
+        "applicant_category": "DIPTI BM College graduates",
+        "eligible_programs": "Undergraduate",
+        "required_grades": "Pre-BBA/HSC result lower than SSC"
+      },
+      "what_it_covers": {
+        "percentage": 15,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "HSC testimonial or transcript"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "dipti_higher",
+      "name": "Affiliated institution waiver",
+      "who_qualifies": {
+        "applicant_category": "DIPTI BM College graduates",
+        "eligible_programs": "Undergraduate",
+        "required_grades": "Pre-BBA/HSC result higher than SSC"
+      },
+      "what_it_covers": {
+        "percentage": 25,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "HSC testimonial or transcript"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "diploma_1",
+      "name": "Diploma merit",
+      "who_qualifies": {
+        "applicant_category": "Diploma holders",
+        "eligible_programs": "Undergraduate",
+        "required_grades": "3.90–4.00"
+      },
+      "what_it_covers": {
+        "percentage": 50,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Diploma certificate"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3.25,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "diploma_2",
+      "name": "Diploma merit",
+      "who_qualifies": {
+        "applicant_category": "Diploma holders",
+        "eligible_programs": "Undergraduate",
+        "required_grades": "3.80–3.89"
+      },
+      "what_it_covers": {
+        "percentage": 30,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Diploma certificate"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "diploma_3",
+      "name": "Diploma merit",
+      "who_qualifies": {
+        "applicant_category": "Diploma holders",
+        "eligible_programs": "Undergraduate",
+        "required_grades": "3.75–3.79"
+      },
+      "what_it_covers": {
+        "percentage": 25,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Diploma certificate"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "diploma_4",
+      "name": "Diploma merit",
+      "who_qualifies": {
+        "applicant_category": "Diploma holders",
+        "eligible_programs": "Undergraduate",
+        "required_grades": "3.50–3.74"
+      },
+      "what_it_covers": {
+        "percentage": 15,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Diploma certificate"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "diploma_5",
+      "name": "Diploma merit",
+      "who_qualifies": {
+        "applicant_category": "Diploma holders",
+        "eligible_programs": "Undergraduate",
+        "required_grades": "3.00–3.49"
+      },
+      "what_it_covers": {
+        "percentage": 10,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Diploma certificate"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "masters_diu_1",
+      "name": "Masters merit",
+      "who_qualifies": {
+        "applicant_category": "DIU graduates",
+        "eligible_programs": "Masters",
+        "required_grades": "Bachelor CGPA >=3.50"
+      },
+      "what_it_covers": {
+        "percentage": 60,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Bachelor final transcript"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 9,
+          "bi_semester": 12
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "masters_diu_2",
+      "name": "Masters merit",
+      "who_qualifies": {
+        "applicant_category": "DIU graduates",
+        "eligible_programs": "Masters",
+        "required_grades": "3.01–3.49"
+      },
+      "what_it_covers": {
+        "percentage": 50,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Bachelor final transcript"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 9,
+          "bi_semester": 12
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "masters_diu_3",
+      "name": "Masters merit",
+      "who_qualifies": {
+        "applicant_category": "DIU graduates",
+        "eligible_programs": "Masters",
+        "required_grades": "<=3.00"
+      },
+      "what_it_covers": {
+        "percentage": 40,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Bachelor final transcript"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 9,
+          "bi_semester": 12
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "masters_public_1",
+      "name": "Masters merit",
+      "who_qualifies": {
+        "applicant_category": "National/Public University graduates",
+        "eligible_programs": "Masters",
+        "required_grades": "First class / CGPA >=3.90"
+      },
+      "what_it_covers": {
+        "percentage": 50,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Bachelor final transcript"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3.25,
+        "minimum_credits": {
+          "trimester": 9,
+          "bi_semester": 12
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "masters_public_2",
+      "name": "Masters merit",
+      "who_qualifies": {
+        "applicant_category": "National/Public University graduates",
+        "eligible_programs": "Masters",
+        "required_grades": "3.50–3.89"
+      },
+      "what_it_covers": {
+        "percentage": 30,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Bachelor final transcript"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 9,
+          "bi_semester": 12
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "masters_public_3",
+      "name": "Masters merit",
+      "who_qualifies": {
+        "applicant_category": "National/Public University graduates",
+        "eligible_programs": "Masters",
+        "required_grades": "3.25–3.49"
+      },
+      "what_it_covers": {
+        "percentage": 25,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Bachelor final transcript"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 9,
+          "bi_semester": 12
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "masters_public_4",
+      "name": "Masters merit",
+      "who_qualifies": {
+        "applicant_category": "National/Public University graduates",
+        "eligible_programs": "Masters",
+        "required_grades": "3.00–3.24"
+      },
+      "what_it_covers": {
+        "percentage": 20,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Bachelor final transcript"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 9,
+          "bi_semester": 12
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "masters_intl_1",
+      "name": "International masters merit",
+      "who_qualifies": {
+        "applicant_category": "New international direct entrants",
+        "eligible_programs": "Masters",
+        "required_grades": "3.50–4.00"
+      },
+      "what_it_covers": {
+        "percentage": 50,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Transcript",
+          "Certificate"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3.25,
+        "minimum_credits": {
+          "trimester": 9,
+          "bi_semester": 12
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "masters_intl_2",
+      "name": "International masters merit",
+      "who_qualifies": {
+        "applicant_category": "New international direct entrants",
+        "eligible_programs": "Masters",
+        "required_grades": "3.00–3.49"
+      },
+      "what_it_covers": {
+        "percentage": 30,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Transcript",
+          "Certificate"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 9,
+          "bi_semester": 12
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "group_1",
+      "name": "Group admission",
+      "who_qualifies": {
+        "applicant_category": "3–5 coworkers",
+        "eligible_programs": "Masters except MBA",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": 10,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Apply to department head; same organization and intake",
+        "required_documents": [
+          "Group list",
+          "Employer documents"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 9,
+          "bi_semester": 12
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "group_2",
+      "name": "Group admission",
+      "who_qualifies": {
+        "applicant_category": "3–5 coworkers",
+        "eligible_programs": "Executive MBA",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": 10,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Apply to department head; same organization and intake",
+        "required_documents": [
+          "Group list",
+          "Employer documents"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 9,
+          "bi_semester": 12
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "group_3",
+      "name": "Group admission",
+      "who_qualifies": {
+        "applicant_category": "10 coworkers",
+        "eligible_programs": "Executive MBA",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": 20,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Apply to department head; same organization and intake",
+        "required_documents": [
+          "Group list",
+          "Employer documents"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 9,
+          "bi_semester": 12
+        }
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "player_1",
+      "name": "Sports quota",
+      "who_qualifies": {
+        "applicant_category": "National athlete",
+        "eligible_programs": "Undergraduate or masters",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": 100,
+        "covered_fees": [
+          "All university fees except admission"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit evidence at admission; online financial aid application and interview",
+        "required_documents": [
+          "Relevant sports evidence"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 2,
+        "minimum_credits": {
+          "undergraduate": 6,
+          "masters": 6
+        },
+        "application_fee_bdt": 102
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2024 onward per policy",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": "General policy also states 3.00 SGPA for sports; confirm conflict with specific table."
+    },
+    {
+      "id": "player_2",
+      "name": "Sports quota",
+      "who_qualifies": {
+        "applicant_category": "Premier League",
+        "eligible_programs": "Undergraduate or masters",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": 90,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit evidence at admission; online financial aid application and interview",
+        "required_documents": [
+          "Relevant sports evidence"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 2,
+        "minimum_credits": {
+          "undergraduate": {
+            "trimester": 9,
+            "bi_semester": 12
+          },
+          "masters": 6
+        },
+        "application_fee_bdt": 102
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2024 onward per policy",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": "General policy also states 3.00 SGPA for sports; confirm conflict with specific table."
+    },
+    {
+      "id": "player_3",
+      "name": "Sports quota",
+      "who_qualifies": {
+        "applicant_category": "First division",
+        "eligible_programs": "Undergraduate or masters",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": 60,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit evidence at admission; online financial aid application and interview",
+        "required_documents": [
+          "Relevant sports evidence"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 2,
+        "minimum_credits": {
+          "undergraduate": {
+            "trimester": 9,
+            "bi_semester": 12
+          },
+          "masters": 6
+        },
+        "application_fee_bdt": 102
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2024 onward per policy",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": "General policy also states 3.00 SGPA for sports; confirm conflict with specific table."
+    },
+    {
+      "id": "player_4",
+      "name": "Sports quota",
+      "who_qualifies": {
+        "applicant_category": "Second division",
+        "eligible_programs": "Undergraduate or masters",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": 40,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit evidence at admission; online financial aid application and interview",
+        "required_documents": [
+          "Relevant sports evidence"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 2,
+        "minimum_credits": {
+          "undergraduate": {
+            "trimester": 9,
+            "bi_semester": 12
+          },
+          "masters": 6
+        },
+        "application_fee_bdt": 102
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2024 onward per policy",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": "General policy also states 3.00 SGPA for sports; confirm conflict with specific table."
+    },
+    {
+      "id": "player_5",
+      "name": "Sports quota",
+      "who_qualifies": {
+        "applicant_category": "DIU athlete",
+        "eligible_programs": "Undergraduate or masters",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": {
+          "min": 20,
+          "max": 40
+        },
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit evidence at admission; online financial aid application and interview",
+        "required_documents": [
+          "Relevant sports evidence"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 2,
+        "minimum_credits": {
+          "undergraduate": {
+            "trimester": 9,
+            "bi_semester": 12
+          },
+          "masters": 6
+        },
+        "application_fee_bdt": 102
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": "Spring 2024 onward per policy",
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": "General policy also states 3.00 SGPA for sports; confirm conflict with specific table."
+    },
+    {
+      "id": "first_batch",
+      "name": "First batch",
+      "who_qualifies": {
+        "applicant_category": "First cohort of a program",
+        "eligible_programs": "Any new program",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": 15,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Last academic transcript"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": null
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "dual_1",
+      "name": "Second masters",
+      "who_qualifies": {
+        "applicant_category": "DIU graduate",
+        "eligible_programs": "Second masters",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": null,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Bachelor and masters final transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": null
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": "Use DIU second-degree bands"
+    },
+    {
+      "id": "dual_2",
+      "name": "Second masters",
+      "who_qualifies": {
+        "applicant_category": "Other university graduate CGPA >=3.00",
+        "eligible_programs": "Second masters",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": null,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Bachelor and masters final transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": null
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": "Use bachelor-result based waiver"
+    },
+    {
+      "id": "dual_3",
+      "name": "Second masters",
+      "who_qualifies": {
+        "applicant_category": "National/Public University graduate CGPA <3.00",
+        "eligible_programs": "Second masters",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": 10,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Bachelor and masters final transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": null
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "dual_4",
+      "name": "Second masters",
+      "who_qualifies": {
+        "applicant_category": "Other private university graduate",
+        "eligible_programs": "Second masters",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": null,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Submit waiver form to admission office",
+        "required_documents": [
+          "Bachelor and masters final transcripts"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": null
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": "Policy CGPA wording ambiguous; confirm second-degree benefit"
+    },
+    {
+      "id": "need",
+      "name": "Need-based aid",
+      "who_qualifies": {
+        "applicant_category": "Financial hardship; no existing waiver; at least one completed semester",
+        "eligible_programs": "Not explicitly limited",
+        "required_grades": "Previous SGPA >=3.00"
+      },
+      "what_it_covers": {
+        "percentage": null,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Online financial aid form and interview; reapply after program transfer",
+        "required_documents": null,
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": {
+          "trimester": 12,
+          "bi_semester": 18
+        },
+        "application_fee_bdt": 102
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "freedom",
+      "name": "Freedom fighter quota",
+      "who_qualifies": {
+        "applicant_category": "Child of freedom fighter",
+        "eligible_programs": "Not specified",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": 100,
+        "covered_fees": [
+          "tuition",
+          "registration"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Online financial aid form and committee verification; pay until verified",
+        "required_documents": [
+          "Original freedom fighter certificate and supporting papers"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3,
+        "minimum_credits": null,
+        "application_fee_bdt": 102
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "chairman",
+      "name": "Chairman Endowment Fund",
+      "who_qualifies": {
+        "applicant_category": "Local student in financial crisis due to death or serious illness; existing waiver below 30%; no guardian insurance; normally regular student",
+        "eligible_programs": "Undergraduate day/evening",
+        "required_grades": "Last SGPA >=3.00; one semester completed"
+      },
+      "what_it_covers": {
+        "percentage": null,
+        "covered_fees": null,
+        "combinable_with_other_waivers": null
+      },
+      "how_to_apply_and_keep": {
+        "method": "Apply online when circular opens; interview",
+        "required_documents": null,
+        "deadline": "As announced in circular",
+        "minimum_semester_gpa": null,
+        "minimum_credits": null
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "mofiz",
+      "name": "Mofiz Uddin Majumder Fund",
+      "who_qualifies": {
+        "applicant_category": "Financial hardship and father died before admission; existing waiver 0–30%",
+        "eligible_programs": "Undergraduate",
+        "required_grades": "CGPA >=3.00 over prior 3 trimesters or 2 bi-semesters"
+      },
+      "what_it_covers": {
+        "percentage": null,
+        "covered_fees": null,
+        "combinable_with_other_waivers": null
+      },
+      "how_to_apply_and_keep": {
+        "method": "Apply online when circular opens; interview",
+        "required_documents": null,
+        "deadline": "As announced in circular",
+        "minimum_semester_gpa": null,
+        "minimum_credits": null
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": "One-time award"
+    },
+    {
+      "id": "delwar",
+      "name": "Delwar Hussain Chowdhury Fund",
+      "who_qualifies": {
+        "applicant_category": "Financial hardship",
+        "eligible_programs": "Undergraduate",
+        "required_grades": "Policy CGPA >=3.00 over prior 3 trimesters or 2 bi-semesters"
+      },
+      "what_it_covers": {
+        "percentage": null,
+        "covered_fees": null,
+        "combinable_with_other_waivers": null
+      },
+      "how_to_apply_and_keep": {
+        "method": "Apply online when circular opens; interview",
+        "required_documents": null,
+        "deadline": "As announced in circular",
+        "minimum_semester_gpa": null,
+        "minimum_credits": null
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "conflicting_sources"
+      },
+      "notes": "Policy and dedicated portal conflict on existing waiver threshold and timing of hardship; consult https://financialaid.daffodilvarsity.edu.bd/diu_dhcs/?app=home&cmd=Eligibility"
+    },
+    {
+      "id": "lutfar",
+      "name": "Professor Dr. M. Lutfar Rahman Scholarship",
+      "who_qualifies": {
+        "applicant_category": "Highest annual CGPA",
+        "eligible_programs": "FSIT levels 1–3",
+        "required_grades": "Highest CGPA; at least 36 credits per calendar year"
+      },
+      "what_it_covers": {
+        "percentage": null,
+        "covered_fees": null,
+        "combinable_with_other_waivers": null
+      },
+      "how_to_apply_and_keep": {
+        "method": "Committee selection",
+        "required_documents": null,
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": null,
+        "annual_award_bdt": 10000,
+        "annual_minimum_credits": 36
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "razia",
+      "name": "Razia Begum Scholarship",
+      "who_qualifies": {
+        "applicant_category": "Highest annual CGPA",
+        "eligible_programs": "FBE and FSIT levels 1–3 (policy introduction differs)",
+        "required_grades": "Highest CGPA; at least 36 credits per calendar year"
+      },
+      "what_it_covers": {
+        "percentage": null,
+        "covered_fees": null,
+        "combinable_with_other_waivers": null
+      },
+      "how_to_apply_and_keep": {
+        "method": "Committee selection",
+        "required_documents": null,
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": null,
+        "annual_award_bdt": null,
+        "annual_minimum_credits": 36
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "hafez",
+      "name": "Hafez Abdur Rahim and Jarina Begum Fund",
+      "who_qualifies": {
+        "applicant_category": "Highest annual CGPA",
+        "eligible_programs": "ETE/ICE",
+        "required_grades": "Highest CGPA; at least 36 credits per calendar year"
+      },
+      "what_it_covers": {
+        "percentage": null,
+        "covered_fees": null,
+        "combinable_with_other_waivers": null
+      },
+      "how_to_apply_and_keep": {
+        "method": "Committee selection",
+        "required_documents": null,
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": null,
+        "annual_award_bdt": null,
+        "annual_minimum_credits": 36
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "ahmad",
+      "name": "Ahmad Husain and Mahbuba Hossain Fund",
+      "who_qualifies": {
+        "applicant_category": "Highest annual CGPA",
+        "eligible_programs": "Engineering",
+        "required_grades": "Highest CGPA; at least 36 credits per calendar year"
+      },
+      "what_it_covers": {
+        "percentage": null,
+        "covered_fees": null,
+        "combinable_with_other_waivers": null
+      },
+      "how_to_apply_and_keep": {
+        "method": "Committee selection",
+        "required_documents": null,
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": null,
+        "annual_award_bdt": null,
+        "annual_minimum_credits": 36
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "csr",
+      "name": "CSR aid",
+      "who_qualifies": {
+        "applicant_category": "Financially disadvantaged students",
+        "eligible_programs": "Not specified",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": null,
+        "covered_fees": null,
+        "combinable_with_other_waivers": null
+      },
+      "how_to_apply_and_keep": {
+        "method": "Application via department head and dean to coordination officer",
+        "required_documents": [
+          "Relevant evidence"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": null
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://webbackend.daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "policy_listed"
+      },
+      "notes": null
+    },
+    {
+      "id": "poor_merit",
+      "name": "Poor and meritorious students",
+      "who_qualifies": {
+        "applicant_category": "Poor and meritorious students",
+        "eligible_programs": null,
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": 100,
+        "covered_fees": null,
+        "combinable_with_other_waivers": null
+      },
+      "how_to_apply_and_keep": {
+        "method": null,
+        "required_documents": null,
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": null
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://daffodilvarsity.edu.bd/scholarship",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "listed_details_unverified"
+      },
+      "notes": "Current availability and detailed rules not verified."
+    },
+    {
+      "id": "injured_2024",
+      "name": "Injured students in July–August 2024 movement",
+      "who_qualifies": {
+        "applicant_category": "Injured students in July–August 2024 movement",
+        "eligible_programs": null,
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": null,
+        "covered_fees": null,
+        "combinable_with_other_waivers": null
+      },
+      "how_to_apply_and_keep": {
+        "method": null,
+        "required_documents": null,
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": null
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://daffodilvarsity.edu.bd/scholarship",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "listed_details_unverified"
+      },
+      "notes": "Current availability and detailed rules not verified."
+    },
+    {
+      "id": "movement_2024",
+      "name": "Students leading 2024 anti-discrimination movement",
+      "who_qualifies": {
+        "applicant_category": "Students leading 2024 anti-discrimination movement",
+        "eligible_programs": null,
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": null,
+        "covered_fees": null,
+        "combinable_with_other_waivers": null
+      },
+      "how_to_apply_and_keep": {
+        "method": null,
+        "required_documents": null,
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": null
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://daffodilvarsity.edu.bd/scholarship",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "listed_details_unverified"
+      },
+      "notes": "Current availability and detailed rules not verified."
+    },
+    {
+      "id": "covid",
+      "name": "COVID-19 support",
+      "who_qualifies": {
+        "applicant_category": "COVID-19 support",
+        "eligible_programs": null,
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": null,
+        "covered_fees": null,
+        "combinable_with_other_waivers": null
+      },
+      "how_to_apply_and_keep": {
+        "method": null,
+        "required_documents": null,
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": null
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://daffodilvarsity.edu.bd/scholarship",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "listed_details_unverified"
+      },
+      "notes": "Current availability and detailed rules not verified."
+    },
+    {
+      "id": "media",
+      "name": "Be a Media Star winners",
+      "who_qualifies": {
+        "applicant_category": "Be a Media Star winners",
+        "eligible_programs": null,
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": null,
+        "covered_fees": null,
+        "combinable_with_other_waivers": null
+      },
+      "how_to_apply_and_keep": {
+        "method": null,
+        "required_documents": null,
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": null
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://daffodilvarsity.edu.bd/scholarship",
+        "applicable_intake": null,
+        "date_checked": "2026-11-28",
+        "status": "listed_details_unverified"
+      },
+      "notes": "Current availability and detailed rules not verified."
+    },
+    {
+      "id": "talent_1",
+      "name": "Talent Hunt",
+      "who_qualifies": {
+        "applicant_category": "New local undergraduate applicants",
+        "eligible_programs": "Undergraduate",
+        "required_grades": "SSC and HSC each >=4.00"
+      },
+      "what_it_covers": {
+        "percentage": 100,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Online application; examination and interview",
+        "required_documents": [
+          "Original SSC/HSC transcripts and certificates",
+          "Guardian commitment"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3.5,
+        "minimum_credits": {
+          "per_semester": 12
+        },
+        "monthly_stipend_bdt": 5000
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://talenthunt.daffodilvarsity.edu.bd/index.php?app=home",
+        "applicable_intake": "Historical: SSC 2017 and HSC 2019",
+        "date_checked": "2026-11-28",
+        "status": "historical_not_current"
+      },
+      "notes": "Annual renewal; no transfer students; two consecutive semesters below 3.50 cancel award; no stacking."
+    },
+    {
+      "id": "talent_2",
+      "name": "Talent Hunt",
+      "who_qualifies": {
+        "applicant_category": "New local undergraduate applicants",
+        "eligible_programs": "Undergraduate",
+        "required_grades": "SSC and HSC each >=4.00"
+      },
+      "what_it_covers": {
+        "percentage": 100,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Online application; examination and interview",
+        "required_documents": [
+          "Original SSC/HSC transcripts and certificates",
+          "Guardian commitment"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3.5,
+        "minimum_credits": {
+          "per_semester": 12
+        },
+        "monthly_stipend_bdt": 3000
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://talenthunt.daffodilvarsity.edu.bd/index.php?app=home",
+        "applicable_intake": "Historical: SSC 2017 and HSC 2019",
+        "date_checked": "2026-11-28",
+        "status": "historical_not_current"
+      },
+      "notes": "Annual renewal; no transfer students; two consecutive semesters below 3.50 cancel award; no stacking."
+    },
+    {
+      "id": "talent_3",
+      "name": "Talent Hunt",
+      "who_qualifies": {
+        "applicant_category": "New local undergraduate applicants",
+        "eligible_programs": "Undergraduate",
+        "required_grades": "SSC and HSC each >=4.00"
+      },
+      "what_it_covers": {
+        "percentage": 100,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Online application; examination and interview",
+        "required_documents": [
+          "Original SSC/HSC transcripts and certificates",
+          "Guardian commitment"
+        ],
+        "deadline": null,
+        "minimum_semester_gpa": 3.5,
+        "minimum_credits": {
+          "per_semester": 12
+        },
+        "monthly_stipend_bdt": 2000
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://talenthunt.daffodilvarsity.edu.bd/index.php?app=home",
+        "applicable_intake": "Historical: SSC 2017 and HSC 2019",
+        "date_checked": "2026-11-28",
+        "status": "historical_not_current"
+      },
+      "notes": "Annual renewal; no transfer students; two consecutive semesters below 3.50 cancel award; no stacking."
+    },
+    {
+      "id": "talent_intl_1",
+      "name": "Talent Hunt international",
+      "who_qualifies": {
+        "applicant_category": "New international applicants",
+        "eligible_programs": "Undergraduate",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": null,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Competitive selection",
+        "required_documents": null,
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": null,
+        "award_usd": 3000
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://talenthunt.daffodilvarsity.edu.bd/index.php?app=home",
+        "applicable_intake": "Historical page; current intake unverified",
+        "date_checked": "2026-11-28",
+        "status": "historical_not_current"
+      },
+      "notes": null
+    },
+    {
+      "id": "talent_intl_2",
+      "name": "Talent Hunt international",
+      "who_qualifies": {
+        "applicant_category": "New international applicants",
+        "eligible_programs": "Undergraduate",
+        "required_grades": null
+      },
+      "what_it_covers": {
+        "percentage": null,
+        "covered_fees": [
+          "tuition"
+        ],
+        "combinable_with_other_waivers": false
+      },
+      "how_to_apply_and_keep": {
+        "method": "Competitive selection",
+        "required_documents": null,
+        "deadline": null,
+        "minimum_semester_gpa": null,
+        "minimum_credits": null,
+        "award_usd": 2000
+      },
+      "where_to_verify": {
+        "official_policy_url": "https://talenthunt.daffodilvarsity.edu.bd/index.php?app=home",
+        "applicable_intake": "Historical page; current intake unverified",
+        "date_checked": "2026-11-28",
+        "status": "historical_not_current"
+      },
+      "notes": null
+    }
+  ]
+}

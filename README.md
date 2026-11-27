@@ -48,6 +48,10 @@ Run `npm run import:tuition` from the project root or the `server` folder to imp
 
 Run `npm run import:admissions` from the project root or the `server` folder to import or update `info/admission_requirements.json`. The import keeps undergraduate and postgraduate requirements, applicant qualification types, and the online and in-person document checklists distinct. Programs flagged as unverified and fields left blank are marked accordingly.
 
+## Import scholarships and waivers
+
+Run `npm run import:waivers` from the project root or the `server` folder to import or update `info/scholarships_waivers.json`. The import retains each rule’s eligible programs, application details, coverage, intake, and policy status. Confirm conflicting rules and unverified later intakes with DIU.
+
 ## Try the chat
 
 After importing the knowledge base, open [the campus assistant](http://127.0.0.1:5173/#chat) and select a suggested question or enter your own. Try “When does the library open?” and then “And on Fridays?” You can also ask general questions when an AI provider is configured. DIU answers use the imported material, and the API retains supporting citations for verification.
