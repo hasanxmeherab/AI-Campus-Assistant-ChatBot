@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "import:pdf": "node import-pdf.js"
+    "import:pdf": "node import-pdf.js",
+    "import:tuition": "node import-tuition.js"
   },
   "dependencies": {
     "express": "^5.1.0",

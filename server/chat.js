@@ -1,5 +1,6 @@
 import { aiProvider, continueConversation, generateAnswer } from './ai.js'
 import { listPassages, rankKeywordPassages, terms } from './search.js'
+import { findProgramTuition } from './tuition.js'
 
 const seedFilename = 'diu_knowledge_base.pdf'
 const noEvidence = 'I’m not sure about that one. Can you tell me a little more about what you’re looking for?'
@@ -21,6 +22,9 @@ const intentRules = [
   [/\b(?:combine|stack|multiple|more than one|at the same time)\b/g, 'overlap'],
   [/\b(?:located|location|address)\b/g, 'campus'],
   [/\b(?:application|applying) deadline\b/g, 'admission deadline'],
+  [/\bhow much\b/g, 'cost'],
+  [/\bbreak\s+down\b/g, 'breakdown'],
+  [/\bb\.\s*sc\b/g, 'bsc'],
   [/\b(?:costs?|prices?)\b/g, 'cost'],
 ]
 
@@ -105,7 +109,7 @@ function answerFromPassage(passage, query) {
 function citePassage(passage, excerpt = displayText(passage.text)) {
   return {
     filename: passage.filename,
-    page: passage.page,
+    page: passage.page ?? null,
     excerpt,
     links: passage.urls,
     pdfUrl: passage.filename === seedFilename ? '/api/sources/diu-knowledge-base' : null,
@@ -142,7 +146,10 @@ export async function answerQuestion(database, question, history = []) {
   const passages = await listPassages(database)
   if (!passages.length) return { answer: notice ? replyUnavailable : noEvidence, sources: [] }
 
-  const tuitionAnswer = findTuitionAnswer(passages, query)
+  const detailedTuition = findProgramTuition(passages, query)
+  const tuitionAnswer = detailedTuition
+    ? { answer: detailedTuition.answer, sources: detailedTuition.passages.map((passage) => citePassage(passage)) }
+    : findTuitionAnswer(passages, query)
   if (tuitionAnswer && !history.length && !notice) return tuitionAnswer
 
   if (aiProvider && !notice) {

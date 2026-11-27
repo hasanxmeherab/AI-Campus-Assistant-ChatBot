@@ -17,8 +17,12 @@ export async function listPassages(database) {
     .find({}, { projection: { filename: 1, passages: 1 }, maxTimeMS: 2000, sort: { _id: 1 } })
     .toArray()
 
-  return documents.flatMap(({ filename, passages }) =>
+  const passages = documents.flatMap(({ filename, passages }) =>
     passages.map((passage) => ({ filename, ...passage })),
+  )
+  if (!passages.some(({ tuition }) => tuition)) return passages
+  return passages.filter(({ filename, text }) =>
+    filename !== 'diu_knowledge_base.pdf' || !text.startsWith('Program | Semester BDT | Total BDT\n'),
   )
 }
 

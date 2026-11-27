@@ -14,6 +14,7 @@
     "dev": "npm run dev --workspace client",
     "build": "npm run build --workspace client",
     "import:pdf": "node server/import-pdf.js",
+    "import:tuition": "node server/import-tuition.js",
     "start": "npm start --workspace server"
   }
 }

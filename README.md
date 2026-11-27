@@ -42,6 +42,10 @@ The import stores excerpts with their PDF page numbers and any source URLs print
 
 Search returns up to three ranked English keyword matches. The bundled PDF is a partial website compilation. Verify time-sensitive information such as fees and deadlines against the official sources.
 
+## Import program fees
+
+Run `npm run import:tuition` from the project root or the `server` folder to import `info/DIU_tuition_fees.json` into the same MongoDB search collection. Re-running the command updates the fee dataset after validation. The assistant uses these entries in place of the bundled PDF's sample fee table. The JSON includes unverified figures and incomplete breakdowns. Amounts are in BDT before waivers.
+
 ## Try the chat
 
 After importing the PDF, open [the campus assistant](http://127.0.0.1:5173/#chat) and select a suggested question or enter your own. Try “When does the library open?” and then “And on Fridays?” You can also ask general questions when an AI provider is configured. DIU answers use the imported material, and the API retains supporting citations for verification.
