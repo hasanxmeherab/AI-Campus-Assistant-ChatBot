@@ -1,75 +1,205 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import './styles.css'
 
-function App() {
-  const [status, setStatus] = useState('checking')
-  const activeCheck = useRef(null)
+const suggestions = [
+  { title: 'Admissions', question: 'What is the Spring 2027 admission deadline?' },
+  { title: 'Tuition fees', question: 'What is the tuition for BBA in Marketing?' },
+  { title: 'Library hours', question: 'When does the library open?' },
+  { title: 'Waivers', question: 'Can I combine multiple waivers?' },
+]
 
-  const checkConnection = useCallback(async () => {
-    activeCheck.current?.abort()
-    const controller = new AbortController()
-    activeCheck.current = controller
-    setStatus('checking')
+const focusRing = 'focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-violet-700'
 
-    try {
-      const response = await fetch('/api/health', {
-        cache: 'no-store',
-        signal: AbortSignal.any([controller.signal, AbortSignal.timeout(6000)]),
-      })
-      const result = await response.json()
-
-      if (controller.signal.aborted) return
-
-      if (response.ok && result.api === 'online' && result.database === 'connected') {
-        setStatus('connected')
-      } else if (response.status === 503 && result.api === 'online' && result.database === 'unavailable') {
-        setStatus('database-unavailable')
-      } else {
-        setStatus('api-unavailable')
-      }
-    } catch {
-      if (!controller.signal.aborted) setStatus('api-unavailable')
-    }
-  }, [])
-
-  useEffect(() => {
-    void checkConnection()
-    return () => activeCheck.current?.abort()
-  }, [checkConnection])
+function SourceCard({ source }) {
+  const sourceUrl = source.links?.find((link) => /^https?:\/\//i.test(link))
+  const citation = `PDF page ${source.page}`
 
   return (
-    <main className="grid min-h-screen place-items-center bg-violet-50 px-5 py-12 text-slate-950">
-      <section className="w-full max-w-lg rounded-3xl border border-violet-100 bg-white p-6 shadow-xl shadow-violet-950/5 sm:p-10">
-        <p className="text-sm font-semibold text-violet-700">Daffodil International University</p>
-        <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">AI Campus Assistant</h1>
-        <h2 className="mt-8 text-lg font-semibold">Connection status</h2>
-        <dl aria-live="polite" className="mt-3 divide-y divide-violet-100 rounded-xl border border-violet-100 bg-violet-50/60 px-4">
-          {connectionLabels[status].map(([service, label]) => (
-            <div key={service} className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 py-3">
-              <dt className="font-medium">{service}</dt>
-              <dd className="text-sm text-slate-700">{label}</dd>
-            </div>
-          ))}
-        </dl>
-        <button
-          type="button"
-          onClick={checkConnection}
-          disabled={status === 'checking'}
-          className="mt-6 rounded-lg bg-violet-700 px-4 py-2.5 font-semibold text-white hover:bg-violet-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-700 disabled:cursor-wait disabled:opacity-60"
-        >
-          Check connection
-        </button>
-      </section>
-    </main>
+    <div className="mt-4 rounded-xl border border-[#ded7ee] bg-[#faf8ff] px-4 py-3">
+      <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
+        <span className="break-all text-sm font-semibold text-[#30234f]">{source.filename}</span>
+        {source.pdfUrl ? (
+          <a
+            href={`${source.pdfUrl}#page=${source.page}`}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`Open page ${source.page} of ${source.filename} in a new tab`}
+            className={`rounded-sm text-sm font-semibold text-violet-800 underline decoration-violet-400 underline-offset-4 ${focusRing}`}
+          >
+            {citation} <span aria-hidden="true">↗</span>
+          </a>
+        ) : <span className="text-sm text-[#5c5275]">{citation}</span>}
+      </div>
+      <details className="mt-2 text-sm text-[#514661]">
+        <summary className={`w-fit cursor-pointer rounded-sm ${focusRing}`}>View source excerpt</summary>
+        <p className="mt-2 whitespace-pre-line break-words leading-relaxed">{source.excerpt}</p>
+        {sourceUrl && (
+          <a href={sourceUrl} target="_blank" rel="noreferrer" className={`mt-2 inline-block rounded-sm font-semibold text-violet-800 underline underline-offset-4 ${focusRing}`}>
+            Open linked DIU source <span aria-hidden="true">↗</span>
+          </a>
+        )}
+      </details>
+    </div>
   )
 }
 
-const connectionLabels = {
-  checking: [['Express API', 'Checking…'], ['MongoDB', 'Checking…']],
-  connected: [['Express API', 'Online'], ['MongoDB', 'Connected']],
-  'api-unavailable': [['Express API', 'Unavailable'], ['MongoDB', 'Could not check']],
-  'database-unavailable': [['Express API', 'Online'], ['MongoDB', 'Unavailable']],
+function ChatMessage({ message, onRetry, pending }) {
+  if (message.role === 'user') {
+    return (
+      <div className="ml-auto max-w-[90%] rounded-2xl rounded-br-sm bg-[#ece5ff] px-4 py-3 text-[#2e214c] sm:max-w-[78%]">
+        <p className="mb-1 text-xs font-semibold text-[#5b3c8a]">You</p>
+        <p className="whitespace-pre-wrap break-words leading-relaxed">{message.text}</p>
+      </div>
+    )
+  }
+
+  return (
+    <article className="flex items-start gap-2 sm:gap-3">
+      <span aria-hidden="true" className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-[#5c34a4] text-[0.65rem] font-bold text-white">DIU</span>
+      <div className="min-w-0 rounded-2xl rounded-tl-sm border border-[#e6dff1] bg-white px-4 py-3 shadow-[0_4px_16px_#30234f08] sm:px-5">
+        <p className="mb-1 text-sm font-semibold text-[#3d2d5b]">Campus Assistant</p>
+        <p className="whitespace-pre-wrap break-words leading-relaxed text-[#302741]">{message.text}</p>
+        {message.sources?.map((source, index) => (
+          <SourceCard key={`${source.filename}:${source.page}:${index}`} source={source} />
+        ))}
+        {message.notice && <p className="mt-3 text-sm text-[#5c5275]">{message.notice}</p>}
+        {message.role === 'error' && (
+          <button type="button" onClick={() => onRetry(message.question)} disabled={pending} className={`mt-3 rounded-md px-2 py-1 text-sm font-semibold text-violet-800 hover:bg-violet-50 disabled:opacity-50 ${focusRing}`}>
+            Try again
+          </button>
+        )}
+      </div>
+    </article>
+  )
+}
+
+function App() {
+  const [question, setQuestion] = useState('')
+  const [messages, setMessages] = useState([])
+  const [pending, setPending] = useState(false)
+  const activeRequest = useRef(null)
+  const input = useRef(null)
+  const transcript = useRef(null)
+
+  useEffect(() => () => activeRequest.current?.abort(), [])
+
+  useEffect(() => {
+    const area = transcript.current
+    if (area && (messages.length || pending)) area.scrollTop = area.scrollHeight
+  }, [messages, pending])
+
+  async function send(value, retryId) {
+    const text = value.trim()
+    if (!text || activeRequest.current) return
+
+    const controller = new AbortController()
+    activeRequest.current = controller
+    setPending(true)
+    if (!retryId) {
+      setQuestion('')
+      setMessages((previous) => [...previous, { id: crypto.randomUUID(), role: 'user', text }])
+    }
+
+    let reply
+    try {
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ question: text }),
+        signal: AbortSignal.any([controller.signal, AbortSignal.timeout(38000)]),
+      })
+      const result = await response.json()
+      if (!response.ok) throw new Error(result.error || 'Could not reach the assistant.')
+      reply = { role: 'assistant', text: result.answer, sources: result.sources, notice: result.notice }
+    } catch {
+      reply = { role: 'error', text: 'I couldn’t reach the document library. Please try again.', question: text }
+    } finally {
+      if (activeRequest.current === controller) {
+        activeRequest.current = null
+        const message = { ...reply, id: retryId || crypto.randomUUID() }
+        setMessages((previous) => retryId
+          ? previous.map((item) => item.id === retryId ? message : item)
+          : [...previous, message])
+        setPending(false)
+      }
+    }
+  }
+
+  function newChat() {
+    activeRequest.current?.abort()
+    activeRequest.current = null
+    setPending(false)
+    setMessages([])
+    setQuestion('')
+    input.current?.focus()
+  }
+
+  function submit(event) {
+    event.preventDefault()
+    void send(question)
+  }
+
+  function handleInputKey(event) {
+    if (event.key === 'Enter' && !event.shiftKey && !event.nativeEvent.isComposing) {
+      event.preventDefault()
+      void send(question)
+    }
+  }
+
+  return (
+    <div className="grid h-dvh grid-rows-[auto_minmax(0,1fr)] overflow-hidden bg-[#f9f7ff] text-[#261a3f] md:grid-cols-[15rem_minmax(0,1fr)] md:grid-rows-1">
+      <header className="flex items-center justify-between gap-3 border-b border-[#3c2b5f] bg-[#24183e] px-4 py-3 text-white sm:px-6 md:flex-col md:items-stretch md:justify-start md:border-r md:border-b-0 md:px-5 md:py-7">
+        <div className="flex min-w-0 items-center gap-3">
+          <span aria-hidden="true" className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[#a182f5] text-sm font-black tracking-tight text-[#261244]">DIU</span>
+          <p className="text-sm leading-snug font-semibold text-[#f2ebff] sm:text-base">AI Campus Assistant</p>
+        </div>
+        <button type="button" onClick={newChat} className="flex shrink-0 items-center gap-2 rounded-xl border border-[#756198] px-3 py-2 text-sm font-semibold text-[#f6efff] hover:bg-[#3c2a61] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white md:mt-6 md:px-4">
+          <span className="text-lg leading-none" aria-hidden="true">+</span> New chat
+        </button>
+      </header>
+
+      <main className="grid min-h-0 grid-rows-[minmax(0,1fr)_auto]">
+        <div ref={transcript} className="overflow-y-auto px-4 sm:px-8">
+          {!messages.length ? (
+            <div className="mx-auto flex min-h-full max-w-[44rem] flex-col justify-center py-8 sm:py-12">
+              <p className="mb-3 text-sm font-semibold tracking-wide text-[#6945a4]">Daffodil International University</p>
+              <h1 className="max-w-xl text-4xl leading-[1.08] font-bold tracking-tight text-[#281b43] sm:text-5xl lg:text-[3.5rem]">How can I help you?</h1>
+              <p className="mt-4 max-w-md text-base leading-relaxed text-[#57496f]">Ask about DIU and open the source page to verify the answer.</p>
+              <div className="mt-7 grid gap-2 sm:grid-cols-2 sm:gap-3">
+                {suggestions.map(({ title, question: sample }) => (
+                  <button key={title} type="button" onClick={() => void send(sample)} className={`rounded-xl border border-[#e2d8f2] bg-white px-4 py-3 text-left hover:border-violet-400 hover:bg-[#f5efff] ${focusRing}`}>
+                    <span className="block text-sm font-bold text-[#4d2e79]">{title}</span>
+                    <span className="mt-1 block text-sm leading-snug text-[#514661]">{sample}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <div role="log" aria-label="Chat messages" className="mx-auto flex max-w-[44rem] flex-col gap-5 py-6 sm:py-9">
+              <h1 className="sr-only">Campus Assistant chat</h1>
+              {messages.map((message) => (
+                <ChatMessage key={message.id} message={message} pending={pending} onRetry={(text) => void send(text, message.id)} />
+              ))}
+              {pending && <p className="px-1 text-sm font-medium text-[#6945a4]">Searching DIU documents…</p>}
+            </div>
+          )}
+        </div>
+
+        <div className="border-t border-[#e6dff1] bg-[#f9f7ff] px-4 pt-3 pb-4 sm:px-8 sm:pt-4 sm:pb-6">
+          <form onSubmit={submit} className="mx-auto max-w-[44rem]">
+            <div className="flex items-end gap-2 rounded-2xl border border-[#d9cde9] bg-white p-2 shadow-[0_5px_20px_#3520520d] focus-within:border-violet-600">
+              <label htmlFor="question" className="sr-only">Ask a question about DIU</label>
+              <textarea ref={input} id="question" rows={2} maxLength={300} value={question} onChange={(event) => setQuestion(event.target.value)} onKeyDown={handleInputKey} placeholder="Ask a question about DIU…" className="min-w-0 flex-1 resize-none rounded-xl px-3 py-2 text-base leading-6 text-[#302741] placeholder:text-[#6a5e7a] focus:outline-none" />
+              <button type="submit" disabled={!question.trim() || pending} className={`min-h-10 rounded-xl bg-[#6137ac] px-4 text-sm font-semibold text-white hover:bg-[#4d2a8d] disabled:cursor-not-allowed disabled:opacity-50 ${focusRing}`}>
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+  )
 }
 
 createRoot(document.getElementById('root')).render(<App />)

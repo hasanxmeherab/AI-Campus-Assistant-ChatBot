@@ -1,6 +1,6 @@
 # DIU Campus Assistant
 
-The project foundation connects a React and Tailwind CSS interface to a Node.js and Express API backed by MongoDB. The local page shows the result of a real MongoDB ping through the API.
+The DIU Campus Assistant is an English chat interface built with React, Tailwind CSS, Node.js, Express, and MongoDB. It answers from imported university documents and shows the supporting PDF page.
 
 ## Run locally
 
@@ -28,7 +28,7 @@ The API listens on port 3001 and uses local MongoDB at `127.0.0.1:27017` by defa
 
 ## Verify the connection
 
-Open the local page and select **Check connection**. A working setup displays **Online** for Express and **Connected** for MongoDB. You can also call `GET /api/health`. It returns HTTP 200 when MongoDB responds and HTTP 503 when the API cannot reach MongoDB.
+Open [the API health endpoint](http://127.0.0.1:3001/api/health). It returns HTTP 200 when MongoDB responds and HTTP 503 when the API cannot reach MongoDB.
 
 To serve a production build through Express, run `npm run build` in `client` while the API is running. Open [http://127.0.0.1:3001](http://127.0.0.1:3001) or use the configured API port.
 
@@ -40,4 +40,20 @@ To serve a production build through Express, run `npm run build` in `client` whi
 
 The import stores excerpts with their PDF page numbers and any source URLs printed in the excerpt. Reimporting a file with the same filename replaces its previous passages after extraction succeeds. To import another text-based PDF, run `npm run import:pdf -- "path/to/document.pdf"`.
 
-Search returns up to three ranked English keyword matches. The bundled PDF is a partial website compilation. Treat results as excerpts to verify against the source, especially for fees, deadlines, and eligibility. Embeddings and generated answers are separate milestones.
+Search returns up to three ranked English keyword matches. The bundled PDF is a partial website compilation. Verify time-sensitive information such as fees and deadlines against the official sources.
+
+## Try the chat
+
+After importing the PDF, open [the frontend](http://127.0.0.1:5173) and select a suggested question or enter your own. Cited answers show the PDF page and a source excerpt. The chat also provides links to the original DIU sources when they are present in the PDF.
+
+`POST /api/chat` accepts a JSON object with a `question` string of up to 300 characters. Chat messages are kept in the open tab, and each question is answered independently.
+
+## Enable AI answers
+
+1. Create an API key in your [OpenAI Platform project](https://platform.openai.com/api-keys).
+2. Add `OPENAI_API_KEY` to `server/.env`. The default model is `gpt-4.1-mini`. Set `OPENAI_MODEL` to use a different model that supports Structured Outputs in the Responses API.
+3. Restart Express, then try “What time does the library close on Fridays?” in the chat.
+
+With a key, the backend sends questions and relevant document excerpts to OpenAI. It combines embedding similarity with keyword search and asks the model to answer only from the retrieved passages. The backend checks that citations quote those passages and that numeric values appear in the cited excerpts. The first question embeds the document collection, and the server reuses those vectors until the indexed text changes or Express restarts. OpenAI API usage is billed to the configured project. See the [API quickstart](https://developers.openai.com/api/docs/quickstart).
+
+Without a key, or if the AI request fails, the existing document-search answer is used and the chat identifies that fallback. The server logs the category of AI errors for troubleshooting.

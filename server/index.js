@@ -1,6 +1,7 @@
 import { createServer } from 'node:http'
 import { fileURLToPath } from 'node:url'
 import express from 'express'
+import { answerQuestion } from './chat.js'
 import { port } from './config.js'
 import { database, mongo } from './database.js'
 import { searchPassages } from './search.js'
@@ -32,6 +33,31 @@ app.get('/api/search', async (request, response) => {
   } catch {
     response.status(503).json({ error: 'Document search is temporarily unavailable.' })
   }
+})
+
+app.post('/api/chat', express.json({ limit: '4kb' }), async (request, response) => {
+  const question = typeof request.body?.question === 'string' ? request.body.question.trim() : ''
+  if (!question || question.length > 300) {
+    return response.status(400).json({ error: 'Enter an English question of up to 300 characters.' })
+  }
+
+  try {
+    response.set('Cache-Control', 'no-store')
+    response.json(await answerQuestion(database, question))
+  } catch {
+    response.status(503).json({ error: 'The document library is temporarily unavailable. Please try again.' })
+  }
+})
+
+app.get('/api/sources/diu-knowledge-base', (_request, response) => {
+  response.sendFile(fileURLToPath(new URL('../info/diu_knowledge_base.pdf', import.meta.url)))
+})
+
+app.use('/api/chat', (error, _request, response, next) => {
+  if (error.status === 400 || error.status === 413) {
+    return response.status(error.status).json({ error: 'Enter an English question of up to 300 characters.' })
+  }
+  next(error)
 })
 
 app.use('/api', (_request, response) => {
