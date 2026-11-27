@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node index.js",
     "import:pdf": "node import-pdf.js",
-    "import:tuition": "node import-tuition.js"
+    "import:diu_knowledge_base.json": "node import-knowledge-base.js",
+    "import:tuition": "node import-tuition.js",
+    "import:admissions": "node import-admissions.js"
   },
   "dependencies": {
     "express": "^5.1.0",

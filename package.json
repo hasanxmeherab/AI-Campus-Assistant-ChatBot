@@ -14,7 +14,9 @@
     "dev": "npm run dev --workspace client",
     "build": "npm run build --workspace client",
     "import:pdf": "node server/import-pdf.js",
+    "import:diu_knowledge_base.json": "node server/import-knowledge-base.js",
     "import:tuition": "node server/import-tuition.js",
+    "import:admissions": "node server/import-admissions.js",
     "start": "npm start --workspace server"
   }
 }

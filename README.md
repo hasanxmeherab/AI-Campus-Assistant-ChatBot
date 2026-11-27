@@ -32,23 +32,25 @@ Open [the API health endpoint](http://127.0.0.1:3001/api/health). It returns HTT
 
 To serve a production build through Express, run `npm run build` in `client` while the API is running. Open [http://127.0.0.1:3001](http://127.0.0.1:3001) or use the configured API port.
 
-## Import and search the DIU PDF
+## Import the DIU knowledge base
 
-1. With MongoDB running, run `npm run import:pdf` at the project root or in `server` to import `info/diu_knowledge_base.pdf`.
-2. Start the API and frontend in their own terminals as shown above.
-3. Open [the library search example](http://127.0.0.1:5173/api/search?q=What%20are%20the%20library%20hours%3F) or call `GET /api/search?q=<English question>`.
+Run `npm run import:diu_knowledge_base.json` from the project root or the `server` folder to load `info/diu_knowledge_base.json` into MongoDB. This adds campus information, an undergraduate program list, waiver notes, services, and contact details. Re-running the command replaces the previous import of this file.
 
-The import stores excerpts with their PDF page numbers and any source URLs printed in the excerpt. Reimporting a file with the same filename replaces its previous passages after extraction succeeds. To import another text-based PDF, run `npm run import:pdf -- "path/to/document.pdf"`.
+To import a text-based PDF, run `npm run import:pdf -- "path/to/document.pdf"`. PDF imports retain source page numbers and any URLs in the excerpts.
 
-Search returns up to three ranked English keyword matches. The bundled PDF is a partial website compilation. Verify time-sensitive information such as fees and deadlines against the official sources.
+With the API running, try the [library search example](http://127.0.0.1:5173/api/search?q=What%20are%20the%20library%20hours%3F). Search returns up to three ranked English keyword matches. Confirm time-sensitive information such as fees and deadlines with DIU.
 
 ## Import program fees
 
 Run `npm run import:tuition` from the project root or the `server` folder to import `info/DIU_tuition_fees.json` into the same MongoDB search collection. Re-running the command updates the fee dataset after validation. The assistant uses these entries in place of the bundled PDF's sample fee table. The JSON includes unverified figures and incomplete breakdowns. Amounts are in BDT before waivers.
 
+## Import admission requirements
+
+Run `npm run import:admissions` from the project root or the `server` folder to import or update `info/admission_requirements.json`. The import keeps undergraduate and postgraduate requirements, applicant qualification types, and the online and in-person document checklists distinct. Programs flagged as unverified and fields left blank are marked accordingly.
+
 ## Try the chat
 
-After importing the PDF, open [the campus assistant](http://127.0.0.1:5173/#chat) and select a suggested question or enter your own. Try “When does the library open?” and then “And on Fridays?” You can also ask general questions when an AI provider is configured. DIU answers use the imported material, and the API retains supporting citations for verification.
+After importing the knowledge base, open [the campus assistant](http://127.0.0.1:5173/#chat) and select a suggested question or enter your own. Try “When does the library open?” and then “And on Fridays?” You can also ask general questions when an AI provider is configured. DIU answers use the imported material, and the API retains supporting citations for verification.
 
 `POST /api/chat` accepts a `question` string of up to 4,000 characters and optional `history` ordered oldest first. Each history entry has a `role` of `user` or `assistant` and a `content` string. The tab keeps the transcript until reload or **New chat**. It sends up to 60 recent messages and 48,000 characters of history with each request.
 

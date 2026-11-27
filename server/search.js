@@ -21,8 +21,8 @@ export async function listPassages(database) {
     passages.map((passage) => ({ filename, ...passage })),
   )
   if (!passages.some(({ tuition }) => tuition)) return passages
-  return passages.filter(({ filename, text }) =>
-    filename !== 'diu_knowledge_base.pdf' || !text.startsWith('Program | Semester BDT | Total BDT\n'),
+  return passages.filter(({ filename, text, legacyTuition }) =>
+    !legacyTuition && (filename !== 'diu_knowledge_base.pdf' || !text.startsWith('Program | Semester BDT | Total BDT\n')),
   )
 }
 

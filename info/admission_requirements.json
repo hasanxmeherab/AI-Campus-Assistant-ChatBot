@@ -1,0 +1,285 @@
+{
+  "university": "Daffodil International University",
+  "retrieval_date": "2026-11-28",
+  "coverage_status": "partial",
+  "program_count": 18,
+  "admission_cycle": null,
+  "source": "https://daffodilvarsity.edu.bd/admission",
+  "programs": [
+    {
+      "department_code": "cse",
+      "program": "BSc CSE",
+      "level": "undergraduate",
+      "general_requirements": "SSC and HSC GPA at least 2.5 each. Science background. Physics, Mathematics and English; exact subject grade unclear.",
+      "english_medium_requirements": "5 O-level and at least 2 A-level subjects; 4 B and 3 C grades across seven subjects. Physics and Mathematics at both levels.",
+      "diploma_requirements": "SSC Science and Computer Technology diploma GPA 2.5 each.",
+      "notes": "Maximum study gap 2 years; English remedial course if HSC English below B.",
+      "source_url": "https://daffodilvarsity.edu.bd/department/cse/admission-eligibility"
+    },
+    {
+      "department_code": "cis",
+      "program": "BSc CIS",
+      "level": "undergraduate",
+      "general_requirements": "SSC and HSC GPA at least 2.5 each. Science background. Higher Mathematics at HSC mandatory.",
+      "english_medium_requirements": "5 O-level and at least 2 A-level subjects; 4 B and 3 C grades across seven subjects. Mathematics and Physics at A-level.",
+      "diploma_requirements": null,
+      "notes": "Maximum study gap 2 years; English remedial course if HSC English below B.",
+      "source_url": "https://daffodilvarsity.edu.bd/department/cis/admission-eligibility"
+    },
+    {
+      "department_code": "eee",
+      "program": "BSc EEE",
+      "level": "undergraduate",
+      "general_requirements": "SSC and HSC GPA at least 2.5 each. Science background. C or higher in Physics, Mathematics and English.",
+      "english_medium_requirements": "5 O-level and at least 2 A-level subjects; 4 B and 3 C grades across seven subjects. Physics and Mathematics at both levels.",
+      "diploma_requirements": "SSC GPA 3.0 male or 2.5 female; Mathematics GPA 2.0; four-year BTEB engineering diploma.",
+      "notes": null,
+      "source_url": "https://daffodilvarsity.edu.bd/department/eee/admission-eligibility"
+    },
+    {
+      "department_code": "rme",
+      "program": "BSc Robotics and Mechatronics Engineering",
+      "level": "undergraduate",
+      "general_requirements": "SSC and HSC GPA at least 2.5 each. Science background. C or higher in Physics, Mathematics and English.",
+      "english_medium_requirements": "5 O-level and at least 2 A-level subjects; 4 B and 3 C grades across seven subjects. Physics and Mathematics at both levels.",
+      "diploma_requirements": null,
+      "notes": null,
+      "source_url": "https://daffodilvarsity.edu.bd/department/rme/admission-eligibility"
+    },
+    {
+      "department_code": "nfe",
+      "program": "Bachelor of Nutrition and Food Engineering",
+      "level": "undergraduate",
+      "general_requirements": "SSC and HSC GPA at least 2.5 each. Science background. C or higher in Chemistry, Biology and English.",
+      "english_medium_requirements": "5 O-level and at least 2 A-level subjects; 4 B and 3 C grades across seven subjects. Chemistry and Biology at both levels.",
+      "diploma_requirements": "SSC and Food or Agriculture diploma GPA 2.5 each.",
+      "notes": null,
+      "source_url": "https://daffodilvarsity.edu.bd/department/nfe/admission-eligibility"
+    },
+    {
+      "department_code": "esdm",
+      "program": "BSc Environmental Science and Disaster Management",
+      "level": "undergraduate",
+      "general_requirements": "SSC and HSC GPA at least 2.5 each. Science or Business Studies; English C or higher.",
+      "english_medium_requirements": "5 O-level and at least 2 A-level subjects; 4 B and 3 C grades across seven subjects.",
+      "diploma_requirements": null,
+      "notes": null,
+      "source_url": "https://daffodilvarsity.edu.bd/department/esdm/admission-eligibility"
+    },
+    {
+      "department_code": "pess",
+      "program": "BSc Physical Education and Sports Science",
+      "level": "undergraduate",
+      "general_requirements": "SSC and HSC GPA at least 2.5 each. Science or Business Studies; English C or higher.",
+      "english_medium_requirements": "5 O-level and at least 2 A-level subjects; 4 B and 3 C grades across seven subjects.",
+      "diploma_requirements": "SSC and four-year Computer Technology or Graphics Design diploma GPA 2.5 each.",
+      "notes": null,
+      "source_url": "https://daffodilvarsity.edu.bd/department/pess/admission-eligibility"
+    },
+    {
+      "department_code": "ph",
+      "program": "Bachelor of Public Health",
+      "level": "undergraduate",
+      "general_requirements": "SSC and HSC GPA at least 2.5 each. Science background. Physics, Mathematics and Biology.",
+      "english_medium_requirements": "5 O-level and at least 2 A-level subjects; 4 B and 3 C grades across seven subjects. Physics, Biology and Mathematics at both levels with B or C grades.",
+      "diploma_requirements": null,
+      "notes": null,
+      "source_url": "https://daffodilvarsity.edu.bd/department/ph/admission-eligibility"
+    },
+    {
+      "department_code": "jmc",
+      "program": "BSS Journalism, Media and Communication",
+      "level": "undergraduate",
+      "general_requirements": "SSC and HSC GPA at least 2.5 each. Any group; English C or higher.",
+      "english_medium_requirements": "5 O-level and at least 2 A-level subjects; 4 B and 3 C grades across seven subjects.",
+      "diploma_requirements": null,
+      "notes": null,
+      "source_url": "https://daffodilvarsity.edu.bd/department/jmc/admission-eligibility"
+    },
+    {
+      "department_code": "bba",
+      "program": "BBA",
+      "level": "undergraduate",
+      "general_requirements": "SSC and HSC GPA at least 2.5 each. Any group; English C or higher.",
+      "english_medium_requirements": "5 O-level and at least 2 A-level subjects; 4 B and 3 C grades across seven subjects.",
+      "diploma_requirements": null,
+      "notes": null,
+      "source_url": "https://daffodilvarsity.edu.bd/department/bba/admission-eligibility"
+    },
+    {
+      "department_code": "mkt",
+      "program": "BBA Marketing",
+      "level": "undergraduate",
+      "general_requirements": "SSC and HSC GPA at least 2.5 each. Any group.",
+      "english_medium_requirements": "5 O-level and at least 2 A-level subjects; 4 B and 3 C grades across seven subjects. A-level must include one B and one C.",
+      "diploma_requirements": null,
+      "notes": null,
+      "source_url": "https://daffodilvarsity.edu.bd/department/mkt/admission-eligibility"
+    },
+    {
+      "department_code": "de",
+      "program": "Bachelor of Entrepreneurship",
+      "level": "undergraduate",
+      "general_requirements": "SSC and HSC GPA at least 2.5 each. Any group; English C or higher.",
+      "english_medium_requirements": "5 O-level and at least 2 A-level subjects; 4 B and 3 C grades across seven subjects.",
+      "diploma_requirements": null,
+      "notes": null,
+      "source_url": "https://daffodilvarsity.edu.bd/department/de/admission-eligibility"
+    },
+    {
+      "department_code": "cse",
+      "program": "MSc CSE",
+      "level": "postgraduate",
+      "general_requirements": "SSC and HSC GPA at least 2.5 each. Relevant computing or engineering bachelor degree with CGPA 2.5/4 or second class and strong Physics and Mathematics background. SSC/HSC second division also accepted.",
+      "english_medium_requirements": null,
+      "diploma_requirements": null,
+      "notes": null,
+      "source_url": "https://daffodilvarsity.edu.bd/department/cse/admission-eligibility"
+    },
+    {
+      "department_code": "cse",
+      "program": "MSc MIS",
+      "level": "postgraduate",
+      "general_requirements": "SSC and HSC GPA at least 2.5 each. Relevant four-year degree with CGPA 2.5/4 or second class; mathematics, statistics, physics, computing or engineering; BBA with 3 years IT experience.",
+      "english_medium_requirements": "5 O-level and at least 2 A-level subjects; 4 B and 3 C grades across seven subjects. Relevant degree and graduation criteria as above.",
+      "diploma_requirements": null,
+      "notes": null,
+      "source_url": "https://daffodilvarsity.edu.bd/department/cse/admission-eligibility"
+    },
+    {
+      "department_code": "ph",
+      "program": "Master of Public Health",
+      "level": "postgraduate",
+      "general_requirements": "CGPA 2.5/4; medical, dental, nursing, health technology, nutrition, health science, social science or anthropology degree; other disciplines require one year health-related work.",
+      "english_medium_requirements": null,
+      "diploma_requirements": null,
+      "notes": null,
+      "source_url": "https://daffodilvarsity.edu.bd/department/ph/admission-eligibility"
+    },
+    {
+      "department_code": "jmc",
+      "program": "MSS Journalism, Media and Communication",
+      "level": "postgraduate",
+      "general_requirements": "BA, BSS, BCom, BSc or equivalent with CGPA 2.5.",
+      "english_medium_requirements": null,
+      "diploma_requirements": null,
+      "notes": null,
+      "source_url": "https://daffodilvarsity.edu.bd/department/jmc/admission-eligibility"
+    },
+    {
+      "department_code": "bba",
+      "program": "MBA",
+      "level": "postgraduate",
+      "general_requirements": "Graduation in any group; official wording indicates GPA 2.5 across SSC, HSC and graduation, confirm interpretation.",
+      "english_medium_requirements": null,
+      "diploma_requirements": null,
+      "notes": null,
+      "source_url": "https://daffodilvarsity.edu.bd/department/bba/admission-eligibility"
+    },
+    {
+      "department_code": "bba",
+      "program": "Executive MBA",
+      "level": "postgraduate",
+      "general_requirements": "MBA academic eligibility and 3 years executive-level work experience.",
+      "english_medium_requirements": null,
+      "diploma_requirements": null,
+      "notes": null,
+      "source_url": "https://daffodilvarsity.edu.bd/department/bba/admission-eligibility"
+    }
+  ],
+  "unverified_programs": [
+    {
+      "program": "Software Engineering (including majors)",
+      "requirements": null
+    },
+    {
+      "program": "Multimedia and Creative Technology",
+      "requirements": null
+    },
+    {
+      "program": "Information Technology and Management",
+      "requirements": null
+    },
+    {
+      "program": "Artificial Intelligence and Data Engineering",
+      "requirements": null
+    },
+    {
+      "program": "Information and Communication Engineering",
+      "requirements": null
+    },
+    {
+      "program": "Textile Engineering",
+      "requirements": null
+    },
+    {
+      "program": "Architecture",
+      "requirements": null
+    },
+    {
+      "program": "Civil Engineering",
+      "requirements": null
+    },
+    {
+      "program": "English",
+      "requirements": null
+    },
+    {
+      "program": "Law",
+      "requirements": null
+    },
+    {
+      "program": "Genetic Engineering and Biotechnology",
+      "requirements": null
+    },
+    {
+      "program": "Pharmacy",
+      "requirements": null
+    },
+    {
+      "program": "Agricultural Science",
+      "requirements": null
+    },
+    {
+      "program": "Fisheries",
+      "requirements": null
+    },
+    {
+      "program": "Management",
+      "requirements": null
+    },
+    {
+      "program": "Accounting",
+      "requirements": null
+    },
+    {
+      "program": "Finance and Banking",
+      "requirements": null
+    },
+    {
+      "program": "Real Estate",
+      "requirements": null
+    },
+    {
+      "program": "Tourism and Hospitality Management",
+      "requirements": null
+    }
+  ],
+  "documents": {
+    "source_url": "https://webbackend.daffodilvarsity.edu.bd/photos/pdf/admission-checklist.pdf",
+    "domestic_in_person": [
+      "Original academic certificates and transcripts: SSC/HSC for bachelor, SSC/diploma including semesters 1\u20138 for diploma applicants, SSC/HSC/graduation for masters",
+      "Copies of academic records",
+      "Five recent passport-size formal photos",
+      "Copies of student and parents birth certificate, NID or passport"
+    ],
+    "online": [
+      "Academic certificates and marksheets for applicable qualifications",
+      "Two student photos",
+      "Student and parents NID, spouse NID if applicable",
+      "Board-issued rather than online copies",
+      "Masters applicants: bachelor records attested by university registrar"
+    ]
+  },
+  "notes": "Paraphrased from official pages retrieved via web search, not a complete site crawl. Null indicates not verified. Admission cycle and international criteria not confirmed. Do not infer eligibility from missing fields."
+}

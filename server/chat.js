@@ -1,3 +1,4 @@
+import { askAdmissionProgram, findAdmissionAnswer, needsAdmissionProgram } from './admissions.js'
 import { aiProvider, continueConversation, generateAnswer } from './ai.js'
 import { listPassages, rankKeywordPassages, terms } from './search.js'
 import { findProgramTuition } from './tuition.js'
@@ -21,7 +22,10 @@ const intentRules = [
   [/\b(?:when (?:does|is) (?:the )?library (?:open|close)|what time (?:does|is) (?:the )?library (?:open|close))\b/g, 'library hours'],
   [/\b(?:combine|stack|multiple|more than one|at the same time)\b/g, 'overlap'],
   [/\b(?:located|location|address)\b/g, 'campus'],
+  [/\bdaffodil international university\b/g, 'diu'],
   [/\b(?:application|applying) deadline\b/g, 'admission deadline'],
+  [/\b(?:get admitted|admitted)\b/g, 'admission'],
+  [/\b[oa][ -]levels?\b/g, 'english medium'],
   [/\bhow much\b/g, 'cost'],
   [/\bbreak\s+down\b/g, 'breakdown'],
   [/\bb\.\s*sc\b/g, 'bsc'],
@@ -82,6 +86,7 @@ function findTuitionAnswer(passages, query) {
 }
 
 function answerFromPassage(passage, query) {
+  if (passage.admission?.program) return null
   const text = displayText(passage.text)
   if (text.split('\n', 1)[0] === tuitionHeader) return null
 
@@ -116,10 +121,26 @@ function citePassage(passage, excerpt = displayText(passage.text)) {
   }
 }
 
+function admissionReply({ answer, passages }, notice) {
+  return { answer, sources: passages.map((passage) => citePassage(passage)), notice }
+}
+
 export async function answerQuestion(database, question, history = []) {
   const casualMessage = question.trim().replaceAll("'", '’').replace(/\s+/g, ' ').replace(/[.!?,]+$/, '').trimEnd()
   const casualReply = smallTalk.find(([pattern]) => pattern.test(casualMessage))?.[1]
   if (casualReply) return { answer: casualReply, sources: [] }
+
+  const originalQuery = normalizeQuestion(question)
+  if (needsAdmissionProgram(originalQuery)) return { answer: askAdmissionProgram, sources: [] }
+
+  let passages
+  const lastMessage = history.at(-1)
+  const previousQuestion = history.at(-2)
+  if (lastMessage?.role === 'assistant' && lastMessage.content === askAdmissionProgram && previousQuestion?.role === 'user') {
+    passages = await listPassages(database)
+    const selected = findAdmissionAnswer(passages, originalQuery, normalizeQuestion(previousQuestion.content))
+    if (selected) return admissionReply(selected)
+  }
 
   const signal = AbortSignal.timeout(35000)
   let searchQuestion = question
@@ -142,8 +163,9 @@ export async function answerQuestion(database, question, history = []) {
   }
 
   const query = normalizeQuestion(searchQuestion)
+  if (needsAdmissionProgram(query)) return { answer: askAdmissionProgram, sources: [] }
   const keywordQuery = query.join(' ')
-  const passages = await listPassages(database)
+  passages ??= await listPassages(database)
   if (!passages.length) return { answer: notice ? replyUnavailable : noEvidence, sources: [] }
 
   const detailedTuition = findProgramTuition(passages, query)
@@ -167,6 +189,9 @@ export async function answerQuestion(database, question, history = []) {
   }
 
   if (tuitionAnswer) return { ...tuitionAnswer, notice }
+
+  const admissionAnswer = findAdmissionAnswer(passages, query)
+  if (admissionAnswer) return admissionReply(admissionAnswer, notice)
 
   for (const passage of rankKeywordPassages(passages, keywordQuery)) {
     const answer = answerFromPassage(passage, query)
