@@ -1,6 +1,6 @@
 # DIU Campus Assistant
 
-The DIU Campus Assistant is an English chat interface built with React, Tailwind CSS, Node.js, Express, and MongoDB. It answers from imported university documents and shows the supporting PDF page.
+The DIU Admissions Guide includes a university overview, application instructions, a searchable FAQ, and official DIU resources. The homepage works with the frontend alone. Select **Ask Assistant** or visit `/#chat` to open the English campus chat, which uses Express and MongoDB to answer from imported university documents.
 
 ## Run locally
 
@@ -44,16 +44,24 @@ Search returns up to three ranked English keyword matches. The bundled PDF is a 
 
 ## Try the chat
 
-After importing the PDF, open [the frontend](http://127.0.0.1:5173) and select a suggested question or enter your own. Cited answers show the PDF page and a source excerpt. The chat also provides links to the original DIU sources when they are present in the PDF.
+After importing the PDF, open [the campus assistant](http://127.0.0.1:5173/#chat) and select a suggested question or enter your own. Try “When does the library open?” and then “And on Fridays?” You can also ask general questions when an AI provider is configured. DIU answers use the imported material, and the API retains supporting citations for verification.
 
-`POST /api/chat` accepts a JSON object with a `question` string of up to 300 characters. Chat messages are kept in the open tab, and each question is answered independently.
+`POST /api/chat` accepts a `question` string of up to 4,000 characters and optional `history` ordered oldest first. Each history entry has a `role` of `user` or `assistant` and a `content` string. The tab keeps the transcript until reload or **New chat**. It sends up to 60 recent messages and 48,000 characters of history with each request.
 
 ## Enable AI answers
 
-1. Create an API key in your [OpenAI Platform project](https://platform.openai.com/api-keys).
-2. Add `OPENAI_API_KEY` to `server/.env`. The default model is `gpt-4.1-mini`. Set `OPENAI_MODEL` to use a different model that supports Structured Outputs in the Responses API.
-3. Restart Express, then try “What time does the library close on Fridays?” in the chat.
+### Google Gemini
 
-With a key, the backend sends questions and relevant document excerpts to OpenAI. It combines embedding similarity with keyword search and asks the model to answer only from the retrieved passages. The backend checks that citations quote those passages and that numeric values appear in the cited excerpts. The first question embeds the document collection, and the server reuses those vectors until the indexed text changes or Express restarts. OpenAI API usage is billed to the configured project. See the [API quickstart](https://developers.openai.com/api/docs/quickstart).
+1. Create an API key in [Google AI Studio](https://aistudio.google.com/apikey).
+2. Add `GEMINI_API_KEY=your_key_here` to `server/.env`. If you already keep your settings in the root `.env`, add it there instead. Keep the key in your server environment.
+3. Restart Express with `npm start` from the project root and ask “What time does the library close on Fridays?” in the [campus chat](http://127.0.0.1:5173/#chat).
 
-Without a key, or if the AI request fails, the existing document-search answer is used and the chat identifies that fallback. The server logs the category of AI errors for troubleshooting.
+Gemini uses `gemini-3.1-flash-lite` for answers and `gemini-embedding-2` for document retrieval. Both have a free tier subject to project quotas. Set `GEMINI_MODEL` to choose a different Gemini text model with structured output support. [Gemini pricing](https://aistudio.google.com/docs/pricing)
+
+### OpenAI
+
+If `GEMINI_API_KEY` is empty, the server uses `OPENAI_API_KEY` when it is set. Create one in the [OpenAI Platform](https://platform.openai.com/api-keys) and add it to your server environment. The default model is `gpt-4.1-mini`. Set `OPENAI_MODEL` to use a different model that supports Structured Outputs in the Responses API. OpenAI API usage is billed to the configured project.
+
+The configured provider receives the current question and recent conversation. For DIU questions it also receives DIU document text. The server reuses document embeddings until the indexed text changes or Express restarts, and checks the model's quotes and numeric values against the retrieved passages. Keep personal information out of demo questions, as Google may use free-tier inputs and outputs to improve its products. [Gemini API terms](https://aistudio.google.com/docs/terms)
+
+If no AI key is configured or the configured provider fails or reaches its quota, the assistant uses local document search and labels the fallback. The server logs the provider and error category.

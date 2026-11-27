@@ -1,6 +1,7 @@
 import { createServer } from 'node:http'
 import { fileURLToPath } from 'node:url'
 import express from 'express'
+import { maxAnswerLength, maxHistoryCharacters, maxHistoryMessages, maxQuestionLength } from '../chat-limits.js'
 import { answerQuestion } from './chat.js'
 import { port } from './config.js'
 import { database, mongo } from './database.js'
@@ -8,6 +9,7 @@ import { searchPassages } from './search.js'
 
 const clientDirectory = fileURLToPath(new URL('../client/dist/', import.meta.url))
 const app = express()
+const invalidChatMessage = `Enter a message of up to ${maxQuestionLength} characters and valid chat history.`
 
 app.disable('x-powered-by')
 
@@ -35,17 +37,23 @@ app.get('/api/search', async (request, response) => {
   }
 })
 
-app.post('/api/chat', express.json({ limit: '4kb' }), async (request, response) => {
+app.post('/api/chat', express.json({ limit: '320kb' }), async (request, response) => {
   const question = typeof request.body?.question === 'string' ? request.body.question.trim() : ''
-  if (!question || question.length > 300) {
-    return response.status(400).json({ error: 'Enter an English question of up to 300 characters.' })
+  const history = request.body?.history === undefined ? [] : request.body.history
+  if (!question || question.length > maxQuestionLength || !Array.isArray(history) ||
+      history.length > maxHistoryMessages || !history.every((message) =>
+        (message?.role === 'user' || message?.role === 'assistant') &&
+        typeof message.content === 'string' && message.content.trim() &&
+        message.content.length <= (message.role === 'user' ? maxQuestionLength : maxAnswerLength),
+      ) || history.reduce((length, { content }) => length + content.length, 0) > maxHistoryCharacters) {
+    return response.status(400).json({ error: invalidChatMessage })
   }
 
   try {
     response.set('Cache-Control', 'no-store')
-    response.json(await answerQuestion(database, question))
+    response.json(await answerQuestion(database, question, history.map(({ role, content }) => ({ role, content }))))
   } catch {
-    response.status(503).json({ error: 'The document library is temporarily unavailable. Please try again.' })
+    response.status(503).json({ error: 'The Campus Assistant is temporarily unavailable. Please try again.' })
   }
 })
 
@@ -55,7 +63,7 @@ app.get('/api/sources/diu-knowledge-base', (_request, response) => {
 
 app.use('/api/chat', (error, _request, response, next) => {
   if (error.status === 400 || error.status === 413) {
-    return response.status(error.status).json({ error: 'Enter an English question of up to 300 characters.' })
+    return response.status(error.status).json({ error: invalidChatMessage })
   }
   next(error)
 })

@@ -21,3 +21,5 @@ export const mongoUri = env.MONGODB_URI || 'mongodb://127.0.0.1:27017/'
 export const databaseName = env.MONGODB_DATABASE || 'diu_campus_assistant'
 export const openAiApiKey = env.OPENAI_API_KEY?.trim()
 export const openAiModel = env.OPENAI_MODEL?.trim() || 'gpt-4.1-mini'
+export const geminiApiKey = env.GEMINI_API_KEY?.trim()
+export const geminiModel = env.GEMINI_MODEL?.trim() || 'gemini-3.1-flash-lite'

@@ -1,9 +1,16 @@
-import { openAiApiKey } from './config.js'
-import { generateAnswer } from './openai.js'
+import { aiProvider, continueConversation, generateAnswer } from './ai.js'
 import { listPassages, rankKeywordPassages, terms } from './search.js'
 
 const seedFilename = 'diu_knowledge_base.pdf'
-const noEvidence = 'I couldn’t find enough information in the available DIU documents to answer that question.'
+const noEvidence = 'I’m not sure about that one. Can you tell me a little more about what you’re looking for?'
+const replyUnavailable = 'I’m having trouble replying right now. Could you try again in a bit?'
+const smallTalk = [
+  [/^(?:hi+|hey+|hello+)(?: there)?$/i, 'Hey! What’s on your mind?'],
+  [/^good (?:morning|afternoon|evening)$/i, 'Hello! How’s your day going?'],
+  [/^(?:(?:hi|hey|hello),? )?(?:how are you|how’s it going|what’s up)$/i, 'I’m doing well! How about you?'],
+  [/^(?:thanks(?: a lot)?|thank you(?: so much)?)$/i, 'You’re welcome!'],
+  [/^(?:bye|goodbye|see you(?: later)?)$/i, 'See you later!'],
+]
 const money = new Intl.NumberFormat('en')
 const filler = new Set(['about', 'current', 'give', 'information', 'know', 'listed', 'official', 'only', 'want'])
 const feeTerms = new Set(['amount', 'bdt', 'cost', 'fee', 'pay', 'per', 'price', 'semester', 'total', 'tuition'])
@@ -18,7 +25,7 @@ const intentRules = [
 ]
 
 function normalizeQuestion(question) {
-  let text = question.toLowerCase()
+  let text = question.toLowerCase().replace(/^(?:hi+|hey+|hello+)[,.!]?[ \t]+/, '')
   for (const [pattern, replacement] of intentRules) text = text.replace(pattern, replacement)
   return [...new Set(terms(text).filter((term) => !filler.has(term)))]
 }
@@ -62,7 +69,7 @@ function findTuitionAnswer(passages, query) {
     const wantsTotal = query.includes('total')
     const fee = wantsSemester === wantsTotal ? `${perSemester} and ${inTotal}` : wantsSemester ? perSemester : inTotal
     return {
-      answer: `The available PDF lists ${program} at ${fee}. Check the official fee schedule for the latest amounts.`,
+      answer: `${program} costs ${fee}. Check DIU’s fee schedule for the latest amounts.`,
       sources,
     }
   }
@@ -82,7 +89,17 @@ function answerFromPassage(passage, query) {
     if (term === 'deadline' && /\bapply by\b/i.test(text)) return true
     return evidenceTerms.has(term)
   })
-  return hasRequestedEvidence ? text : null
+  if (!hasRequestedEvidence) return null
+
+  return text
+    .replace(/^Library: Sat-Thu (\d{1,2}:\d{2})-(\d{1,2}:\d{2}); Friday (\d{1,2}:\d{2})-(\d{1,2}:\d{2})\.$/i,
+      'The library is open $1–$2 from Saturday to Thursday and $3–$4 on Fridays.')
+    .replace(/^Admissions: .*?Indexed tuition page shows (.+?) apply by (.+?) and admission test (.+?); confirm current notice\.$/i,
+      'Apply by $2 for $1. The admission test is on $3. Check DIU’s current admissions notice to confirm.')
+    .replace(/^Waiver overlap: FAQ says a student may enjoy one waiver category, highest applicable percentage\./i,
+      'You can usually use one waiver, whichever gives you the highest percentage.')
+    .replace(/^Waiver conditions: Financial aid portal says undergraduate students generally need/i,
+      'Undergraduate students generally need')
 }
 
 function citePassage(passage, excerpt = displayText(passage.text)) {
@@ -95,34 +112,59 @@ function citePassage(passage, excerpt = displayText(passage.text)) {
   }
 }
 
-export async function answerQuestion(database, question) {
-  const query = normalizeQuestion(question)
-  const keywordQuery = query.join(' ')
-  const passages = await listPassages(database)
-  if (!passages.length) return { answer: noEvidence, sources: [] }
+export async function answerQuestion(database, question, history = []) {
+  const casualMessage = question.trim().replaceAll("'", '’').replace(/\s+/g, ' ').replace(/[.!?,]+$/, '').trimEnd()
+  const casualReply = smallTalk.find(([pattern]) => pattern.test(casualMessage))?.[1]
+  if (casualReply) return { answer: casualReply, sources: [] }
 
-  const tuitionAnswer = findTuitionAnswer(passages, query)
-  if (tuitionAnswer) return tuitionAnswer
+  const signal = AbortSignal.timeout(35000)
+  let searchQuestion = question
+  let notice = aiProvider ? undefined : 'AI replies are currently disabled.'
 
-  let notice = 'AI is not configured. This response uses document search.'
-  if (openAiApiKey) {
+  function useFallback(error) {
+    const reason = Number.isInteger(error.status) ? `HTTP ${error.status}` : error.name
+    console.warn(`${aiProvider.name} answer unavailable (${reason}). Using document search.`)
+    notice = 'AI replies are temporarily unavailable.'
+  }
+
+  if (aiProvider) {
     try {
-      const result = await generateAnswer(passages, question, keywordQuery)
-      return {
-        answer: result.answer || noEvidence,
-        sources: result.citations.map(({ passage, excerpt }) => citePassage(passage, excerpt)),
-      }
+      const turn = await continueConversation(question, history, signal)
+      if (turn.kind === 'general') return { answer: turn.answer, sources: [] }
+      searchQuestion = turn.question
     } catch (error) {
-      const reason = Number.isInteger(error.status) ? `HTTP ${error.status}` : error.name
-      console.warn(`AI answer unavailable (${reason}). Using document search.`)
-      notice = 'AI is temporarily unavailable. This response uses document search.'
+      useFallback(error)
     }
   }
+
+  const query = normalizeQuestion(searchQuestion)
+  const keywordQuery = query.join(' ')
+  const passages = await listPassages(database)
+  if (!passages.length) return { answer: notice ? replyUnavailable : noEvidence, sources: [] }
+
+  const tuitionAnswer = findTuitionAnswer(passages, query)
+  if (tuitionAnswer && !history.length && !notice) return tuitionAnswer
+
+  if (aiProvider && !notice) {
+    try {
+      const result = await generateAnswer(passages, { question, searchQuestion, keywordQuery, history, signal })
+      if (result.answer) {
+        return {
+          answer: result.answer,
+          sources: result.citations.map(({ passage, excerpt }) => citePassage(passage, excerpt)),
+        }
+      }
+    } catch (error) {
+      useFallback(error)
+    }
+  }
+
+  if (tuitionAnswer) return { ...tuitionAnswer, notice }
 
   for (const passage of rankKeywordPassages(passages, keywordQuery)) {
     const answer = answerFromPassage(passage, query)
     if (answer) return { answer, sources: [citePassage(passage)], notice }
   }
 
-  return { answer: noEvidence, sources: [], notice }
+  return { answer: notice ? replyUnavailable : noEvidence, sources: [] }
 }
